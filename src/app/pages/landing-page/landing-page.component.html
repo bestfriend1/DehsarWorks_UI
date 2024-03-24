@@ -1,0 +1,17 @@
+<div class="main">
+      <div class="slider">
+            <ul class="items">
+              <li class="item" [ngClass]="{'current': currentIndex === i}" *ngFor="let image of images; let i = index">
+                <img [src]="image">
+              </li>
+            </ul>
+            <!-- <div class="buttons">
+              <button type="button" id="prev" class="button prev" (click)="moveSlide(true)"></button>
+              <button type="button" id="next" class="button next" (click)="moveSlide(false)"></button>
+            </div>
+            <div class="dots">
+              <button type="button" class="dot" [ngClass]="{'current': currentIndex === i}" *ngFor="let dot of dots; let i = index" (click)="moveSlideByDot(i)"></button>
+            </div> -->
+          </div>
+          
+</div>

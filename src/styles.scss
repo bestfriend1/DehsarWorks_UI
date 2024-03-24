@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+      font-family: grotesk;
+      src: url('./assets/Fonts/overused-grotesk-font-family-1710884038-0/OverusedGrotesk-Light-BF64eeac18175cf.ttf');
+
+}
+@font-face {
+      font-family: groteskmed;
+      src: url('./assets/Fonts/overused-grotesk-font-family-1710884038-0/OverusedGrotesk-Medium-BF64eeac18163be.ttf');
+      
+}
+
+@font-face {
+      font-family: groteskReg;
+      src: url('./assets/Fonts/overused-grotesk-font-family-1710884038-0/OverusedGrotesk-VF-BF64eeac17efb41.ttf');
+      
+}
+
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

@@ -1,0 +1,45 @@
+//slider caurosel starts
+
+
+.slider{
+      position:relative;
+      width: 100%;
+      height: 100dvh;
+      overflow: hidden;
+
+      .items{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 56.25%;
+
+
+        .item{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 5s ease-in-out;
+          &.current{
+            opacity: 1;
+          }
+
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+      }
+    }
+    
+    
+      
+    }
+    
+    
+
+//slider caurosel ends
