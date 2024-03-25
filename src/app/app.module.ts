@@ -10,6 +10,8 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { TemplateTwoComponent } from './pages/template-two/template-two.component';
+import { TemplateThreeComponent } from './pages/template-three/template-three.component';
+
 
 
 
@@ -20,7 +22,9 @@ import { TemplateTwoComponent } from './pages/template-two/template-two.componen
     LandingPageComponent,
     IdeaSpaceComponent,
     NavbarComponent,
-    TemplateTwoComponent
+    TemplateTwoComponent,
+    TemplateThreeComponent,
+    
     
     
   ],
