@@ -145,7 +145,7 @@
 
     .descriptions {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
       margin-left: 3%;
       margin-right: 3%;
       margin-top: 2%;
@@ -153,7 +153,7 @@
 
       .sideImage{
             img{
-                  height: 1157px;
+                  height: 100%;
                   width: 100%;
             }
       }
@@ -263,7 +263,7 @@
           img {
             margin-left: 0%;
             width: 100%;
-            height: 589px;
+            height: 100%;
             flex-shrink: 0;
           }
         }
@@ -321,7 +321,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        max-width: 100%;
+        width: 100%;
         max-height: 100%;
         z-index: -1;
         -webkit-transition: all 1s;
@@ -406,7 +406,7 @@
 
             img{
                width: 100%;
-            height: 910px;   
+            height: 100%;   
             }
             
       }
@@ -421,7 +421,7 @@
 
             img{
                   width: 100%;
-                  height: 910px;
+                  height: 100%; 
             }
       }
   }
@@ -431,7 +431,7 @@
 
             img{
                width: 100%;
-                  height: 910px;   
+               height: 100%;   
             }
             
       }
@@ -446,7 +446,7 @@
 
             img{
                   width: 100%;
-                  height: 910px;
+                  height: 100%; 
             }
       }
   }
@@ -499,8 +499,8 @@
           }
       
           .carousel img {
-            width: calc(100% - 20px);
-            height: calc(100% - 20px);
+            width: calc(100% - 120px);
+            height: calc(100% - 0px);
             margin: 10px;
             margin-top: 3%;
             flex-shrink: 0;
