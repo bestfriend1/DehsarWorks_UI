@@ -19,10 +19,13 @@
 
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
+@import 'animate.css';
+
 *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      
 }
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

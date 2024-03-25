@@ -73,10 +73,10 @@
 
                   padding-top: 5%;
                   padding-left: 3%;
-                  padding-right: 6%;
+                  padding-right: 3%;
                   display: grid;
-                  grid-template-columns: 1fr 1fr 1fr;
-                  column-gap: 15%;
+                  grid-template-columns: .2fr 1fr 1fr;
+                  column-gap: 5%;
 
                   .boxes {
                         display: grid;
@@ -105,7 +105,7 @@
 
                         .box3 {
                               height: 70px;
-                              width: 636px;
+                              width: 100%;
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
                               // border-top: 1px solid black;
