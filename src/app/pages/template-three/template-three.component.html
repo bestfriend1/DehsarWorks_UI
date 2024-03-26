@@ -1,9 +1,9 @@
 <div class="all">
   <section class="one">
-    <h1>AJO IDEA SPACE</h1>
+    <h1 class="wow animate__slideInUp" data-wow-delay="0.1s">AJO IDEA SPACE</h1>
     <div class="spans">
-      <div class="links">
-        <span>Works / Commercial / AJO IDEA SPACE </span>
+      <div class="links wow animate__slideInUp" data-wow-delay="0.2s">
+        <span >Works / Commercial / AJO IDEA SPACE </span>
       </div>
       <div class="locations">
         <span> Dhaka,Bangladesh </span>
@@ -11,7 +11,8 @@
     </div>
 
     <div class="img">
-      <img src="../../../assets/images/bigimg1.png" alt="" />
+      
+      <img class="wow " data-wow-delay="1s" src="../../../assets/images/bigimg1.png" alt="" />
     </div>
   </section>
 
@@ -19,13 +20,13 @@
     <div class="rectangle">
       <h3>About</h3>
       <div class="paragraph">
-        <h2 >
+        <h2 class="wow animate__fadeInUp" data-wow-delay="0.1s" >
           AJO, in Bangla is often used to describe something old, left out or
           irrelevant to its time. The word was used by the restaurant’s Founder
           and ideator Khaled Mahmud
         </h2>
 
-        <p>
+        <p class="wow animate__fadeInUp" data-wow-delay="0.2s">
           as the idea was to convert a left over space and turn it into a unique
           cafe near an art gallery. It was a very popular hangout space among
           people including artist, thinkers and designers. It acted as a
@@ -34,21 +35,21 @@
         </p>
       </div>
 
-      <div class="boxes">
-        <div class="box1">
+      <div class="boxes ">
+        <div class="box1 wow animate__fadeInLeft" data-wow-delay="1s" >
           <div class="title">Building Programme and Type: </div>
           <div class="subtitle">
             Café and restaurant with community engagement programs
           </div>
         </div>
-        <div class="box2">
+        <div class="box2 wow animate__fadeInLeft" data-wow-delay="1.5s">
           <div class="title">Project address:</div>
           <div class="subtitle">
             (23°52'13.6"N 90°23'31.8"E) Road 2, Sector 13, Uttara, 1230 Dhaka,
             Bangladesh
           </div>
         </div>
-        <div class="box3">
+        <div class="box3 wow animate__fadeInLeft" data-wow-delay="2s">
           <div class="title">Client: </div>
           <div class="subtitle">Khaled Mahmud</div>
         </div>
@@ -56,7 +57,7 @@
     </div>
 
     <div class="bigimg">
-      <img src="../../../assets/images/bigimg2.png" alt="" />
+      <img class="wow" data-wow-delay="1s" src="../../../assets/images/bigimg2.png" alt="" />
     </div>
   </section>
 
@@ -66,24 +67,24 @@
             <div class="img">
                   <img src="../../../assets/images/medimg1.png" alt="" />
                 </div>
-        <h3>Design Teams:</h3>
+        <h3 class="links wow animate__slideInUp" data-wow-delay="0.2s">Design Teams:</h3>
 
         <div class="titlebox">
 
 
-          <div class="box1">
+          <div class="box1 wow animate__fadeInLeft" data-wow-delay="1s">
           <div class="title">Principal architect:</div>
           <div class="subtitle">Ar.Rashed Hassan Chowdhury</div>
         </div>
-        <div class="box2">
+        <div class="box2 wow animate__fadeInLeft" data-wow-delay="1.5s">
           <div class="title">Project Architect:</div>
           <div class="subtitle">Ar.Sayedil Ashrafin, Ar.Emon Mahbub</div>
         </div>
-        <div class="box3">
+        <div class="box3 wow animate__fadeInLeft" data-wow-delay="2s">
           <div class="title">Landscape Architect: </div>
           <div class="subtitle">In house Collaborators</div>
         </div>
-        <div class="box4">
+        <div class="box4 wow animate__fadeInLeft" data-wow-delay="2.5s">
           <div class="title">Structural designer: </div>
           <div class="subtitle">
             Engr.Shamsul Alam
@@ -97,11 +98,11 @@
             Mechanical Engr. Kamruzzaman
           </div>
         </div>
-        <div class="box5">
+        <div class="box5 wow animate__fadeInLeft" data-wow-delay="3s">
           <div class="title">Construction Firm:</div>
           <div class="subtitle">ALM Steel Building Technology limited</div>
         </div>
-        <div class="box6">
+        <div class="box6 wow animate__fadeInLeft" data-wow-delay="3.5s">
           <div class="title">Supported by:</div>
           <div class="subtitle">Mir Akter Real Estate</div>
         </div>
@@ -126,9 +127,9 @@
       </div>
 
       <div class="longImg">
-            <img src="../../../assets/images/car-img1.png" alt="">
-            <img src="../../../assets/images/car-img2.png" alt="">
-            <img src="../../../assets/images/car-img3.png" alt="">
+            <img class="wow" src="../../../assets/images/car-img1.png" alt="">
+            <img  class="wow"src="../../../assets/images/car-img2.png" alt="">
+            <img  class="wow"src="../../../assets/images/car-img3.png" alt="">
       </div>
   </section>
 
@@ -196,4 +197,31 @@
       </div>
     </div>
   </section>
+  <!-- <section class="catagory">
+    <h1>
+      View All Category
+    </h1>
+    <p>
+      28th JK AYA (Architect of the Year Awards) 2018 Young Architect AwardCategory: Foreign Country Architecture Award
+    </p>
+    
+    <div class="slider">
+      <button class="slider__control prev" (click)="prevSlide()"><<i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slider__control next" (click)="nextSlide()">><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="slider__container" [attr.data-multislide]="false" [attr.data-step]="step" #sliderContainer>
+        <div class="slider__item" *ngFor="let item of items">
+
+          <h2 style="color: rgb(255, 255, 255); font-family:groteskMed;">{{ item.title }}</h2>
+      
+          <img [src]=" item.imageUrl" alt="" width="100%">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h3>copyright 2024 Dehsarworks. All rights are reserved.</h3>
+    </div>
+    
+  </section> -->
 </div>

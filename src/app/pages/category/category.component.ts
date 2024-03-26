@@ -3,15 +3,13 @@ import { AfterViewInit, Component, ElementRef, HostListener, Renderer2, ViewChil
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {  OnInit } from '@angular/core';
-// declare const gsap: any;
-// declare const ScrollTrigger: any;
 
 @Component({
-  selector: 'app-template-three',
-  templateUrl: './template-three.component.html',
-  styleUrls: ['./template-three.component.scss']
+  selector: 'app-category',
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.scss']
 })
-export class TemplateThreeComponent implements AfterViewInit , OnInit  {
+export class CategoryComponent implements AfterViewInit , OnInit  {
 
   
   imageUrls: string[] = [
@@ -174,14 +172,14 @@ export class TemplateThreeComponent implements AfterViewInit , OnInit  {
 
   onUseGreenSok() {
     let sections: any[] = gsap.utils.toArray(
-      '.four  '
+      '.catagory '
     );
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
       ease: 'none',
-      target: '.four',
+      target: 'catagory',
       scrollTrigger: {
-        trigger: '.four',
+        trigger: '.catagory ',
         pin: true,
         start: 'bottom bottom',
         scrub: 1,
@@ -190,7 +188,7 @@ export class TemplateThreeComponent implements AfterViewInit , OnInit  {
           '+=' +
           (
             document.querySelector(
-              '.four'
+              '.catagory'
             ) as HTMLElement
           ).offsetWidth,
       },

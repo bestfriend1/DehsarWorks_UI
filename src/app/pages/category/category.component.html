@@ -1,0 +1,27 @@
+<section class="catagory">
+      <h1>
+        View All Category
+      </h1>
+      <p>
+        28th JK AYA (Architect of the Year Awards) 2018 Young Architect AwardCategory: Foreign Country Architecture Award
+      </p>
+      
+      <div class="slider">
+        <button class="slider__control prev" (click)="prevSlide()"><<i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider__control next" (click)="nextSlide()">><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="slider__container" [attr.data-multislide]="false" [attr.data-step]="step" #sliderContainer>
+          <div class="slider__item" *ngFor="let item of items">
+  
+            <h2 style="color: rgb(255, 255, 255); font-family:groteskMed;">{{ item.title }}</h2>
+        <!-- <span>{{ item.description }}</span> -->
+            <img [src]=" item.imageUrl" alt="" width="100%">
+            
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer">
+        <h3>copyright 2024 Dehsarworks. All rights are reserved.</h3>
+      </div>
+      
+    </section>

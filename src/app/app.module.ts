@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { TemplateTwoComponent } from './pages/template-two/template-two.component';
 import { TemplateThreeComponent } from './pages/template-three/template-three.component';
+import { CategoryComponent } from './pages/category/category.component';
 
 
 
@@ -24,6 +25,7 @@ import { TemplateThreeComponent } from './pages/template-three/template-three.co
     NavbarComponent,
     TemplateTwoComponent,
     TemplateThreeComponent,
+    CategoryComponent,
     
     
     
@@ -32,7 +34,8 @@ import { TemplateThreeComponent } from './pages/template-three/template-three.co
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CommonModule
+    CommonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
