@@ -33,7 +33,7 @@ export class TemplateThreeComponent implements AfterViewInit , OnInit  {
 
   ngAfterViewInit() {
     this.setupCarouselLoop();
-    this.onUseGreenSok();
+    // this.onUseGreenSok();
     // this.initIntersectionObserver();
   }
 
@@ -172,29 +172,29 @@ export class TemplateThreeComponent implements AfterViewInit , OnInit  {
   }
 
 
-  onUseGreenSok() {
-    let sections: any[] = gsap.utils.toArray(
-      '.four  '
-    );
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: 'none',
-      target: '.four',
-      scrollTrigger: {
-        trigger: '.four',
-        pin: true,
-        start: 'bottom bottom',
-        scrub: 1,
-        snap: 1 / (sections.length ),
-        end: () =>
-          '+=' +
-          (
-            document.querySelector(
-              '.four'
-            ) as HTMLElement
-          ).offsetWidth,
-      },
-    });
-  }
+  // onUseGreenSok() {
+  //   let sections: any[] = gsap.utils.toArray(
+  //     '.four  '
+  //   );
+  //   gsap.to(sections, {
+  //     xPercent: -100 * (sections.length - 1),
+  //     ease: 'none',
+  //     target: '.four',
+  //     scrollTrigger: {
+  //       trigger: '.four',
+  //       pin: true,
+  //       start: 'bottom bottom',
+  //       scrub: 1,
+  //       snap: 1 / (sections.length ),
+  //       end: () =>
+  //         '+=' +
+  //         (
+  //           document.querySelector(
+  //             '.four'
+  //           ) as HTMLElement
+  //         ).offsetWidth,
+  //     },
+  //   });
+  // }
   
 }
