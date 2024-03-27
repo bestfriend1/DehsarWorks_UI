@@ -502,7 +502,7 @@
       .all {
             .one {
                   position: relative;
-                  padding-top: 10rem;
+                  padding-top: 20%;
 
                   h1 {
                         font-size: 40px;
@@ -580,8 +580,8 @@
                                     display: grid;
                                     grid-template-columns: 1.3fr 1.9fr;
                                     gap: 5%;
-                                    border-top: 1px solid black;
-                                    border-bottom: 1px solid black;
+                                    // border-top: 1px solid black;
+                                    // border-bottom: 1px solid black;
                                     font-size: 14px;
                                     font-family: grotesk;
                               }
@@ -597,7 +597,7 @@
                                     grid-template-columns: 1.3fr 1.9fr;
                                     gap: 5%;
                                     // border-top: 1px solid black;
-                                    border-bottom: 1px solid black;
+                                    // border-bottom: 1px solid black;
                               }
 
                               .box3 {
@@ -611,7 +611,7 @@
                                     grid-template-columns: 1.3fr 1.9fr;
                                     gap: 5%;
                                     // border-top: 1px solid black;
-                                    border-bottom: 1px solid black;
+                                    // border-bottom: 1px solid black;
                               }
                         }
 
