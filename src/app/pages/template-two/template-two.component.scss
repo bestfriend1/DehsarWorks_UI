@@ -32,6 +32,8 @@
 
             .img {
                   img {
+                        animation: revealImageBig1 .7s linear forwards;
+                        clip-path: inset(0 0 0  100%);
                         padding-top: 5px;
                         width: 100%;
                         height: 812px;
@@ -84,14 +86,24 @@
                         column-gap: 10px;
                         height: 50%;
 
+                        hr{
+                              color: inherit;
+                              border: 0;
+                              border-top: 1px black solid;
+                              opacity: 1;
+                              margin: 0;
+                              padding: 0;
+                              animation: revealImageBig2 .7s linear forwards;
+                              clip-path: inset( 0 100% 0  0  );
+                            }
                         .box1 {
                               padding-top: 2%;
                               height: auto;
                               width: 100%;
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
-                              border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-top: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
 
                         .box2 {
@@ -100,16 +112,16 @@
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
                               // border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
 
                         .box3 {
-                              height: 70px;
+                              height: auto;
                               width: 100%;
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
                               // border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
                   }
 
@@ -213,8 +225,8 @@
                               width: 98%;
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
-                              border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-top: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
 
                         .box2 {
@@ -227,7 +239,7 @@
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
                               // border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
 
                         .box3 {
@@ -240,7 +252,7 @@
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
                               // border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
 
                         .box4 {
@@ -253,7 +265,7 @@
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
                               // border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-bottom: 1px solid black;
 
                               .subtitle {
                                     hr {
@@ -276,7 +288,7 @@
                               display: grid;
                               grid-template-columns: 0.7fr 0.7fr;
                               // border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
 
                         .box6 {
@@ -377,6 +389,17 @@
                         font-family: grotesk;
                         font-size: 20px;
 
+                        hr{
+                              color: inherit;
+                              border: 0;
+                              border-top: 1px black solid;
+                              opacity: 1;
+                              margin: 0;
+                              padding: 0;
+                              animation: revealImageBig2 .7s linear forwards;
+                              clip-path: inset( 0 100% 0  0  );
+                            }
+
                         .box1 {
                               padding-top: 2%;
                               padding-bottom: 2%;
@@ -384,8 +407,8 @@
                               width: 100%;
                               display: grid;
                               grid-template-columns: 2fr 1fr;
-                              border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-top: 1px solid black;
+                              // border-bottom: 1px solid black;
                         }
 
                         .box2 {
@@ -396,7 +419,7 @@
                               display: grid;
                               grid-template-columns: 2fr 1fr;
                               // border-top: 1px solid black;
-                              border-bottom: 1px solid black;
+                              // border-bottom: 1px solid black;
                               text-align: left;
 
                               hr {
@@ -434,6 +457,46 @@
             }
       }
 }
+
+
+@keyframes revealImage {
+      0% {
+        clip-path: inset(0 0 100% 0); /* Start with the entire image hidden except the top */
+      }
+      100% {
+        clip-path: inset(0 0 0 0); /* Gradually reveal the entire image from top to bottom */
+      }
+    }
+    
+    @keyframes revealImageBig1 {
+      0% {
+        clip-path: inset(0 0 0 100%); /* Start with the entire image hidden except the top */
+      }
+      100% {
+        clip-path: inset(0 0 0 0); /* Gradually reveal the entire image from top to bottom */
+      }
+    }
+    
+    @keyframes revealImageBig2 {
+      0% {
+        clip-path: inset( 0 100% 0  0 ); /* Start with the entire image hidden except the top */
+      }
+      100% {
+        clip-path: inset(0 0 0 0); /* Gradually reveal the entire image from top to bottom */
+      }
+    }
+    
+    @keyframes norachora {
+      0%{
+        transform: translateY(1rem) ;
+      }
+      50%{
+        transform: translateY(5rem) ;
+      }
+      100%{
+        transform: translateY(11rem) ;
+      }
+    }
 
 @media (max-width: 768px) {
       .all {

@@ -31,7 +31,7 @@ export class CategoryComponent implements AfterViewInit , OnInit  {
 
   ngAfterViewInit() {
     this.setupCarouselLoop();
-    this.onUseGreenSok();
+    // this.onUseGreenSok();
     // this.initIntersectionObserver();
   }
 
@@ -108,35 +108,39 @@ export class CategoryComponent implements AfterViewInit , OnInit  {
 
   items = [
     {
-      imageUrl: '../../../assets/images/cat1.png',
+      imageUrl: '../../../assets/images/cat2.png',
       title: 'Residential',
       description: 'Coding Platform'
     },
     {
       imageUrl: '../../../assets/images/cat2.png',
-      title: 'Commercial',
-      description: 'Coding Platform'
-    },
-    {
-      imageUrl: '../../../assets/images/cat3.png',
-      title: 'Institution',
-      description: 'Coding Platform'
-    },
-    {
-      imageUrl: '../../../assets/images/cat4.png',
-      title: 'Interior',
-      description: 'Coding Platform'
-    },
-    {
-      imageUrl:  '../../../assets/images/cat1.png',
-      title: 'Interior',
+      title: 'Residential',
       description: 'Coding Platform'
     },
     {
       imageUrl: '../../../assets/images/cat2.png',
-      title: 'Interior',
+      title: 'Residential',
       description: 'Coding Platform'
     },
+    {
+      imageUrl: '../../../assets/images/cat2.png',
+      title: 'Residential',
+      description: 'Coding Platform'
+    },
+    {
+      imageUrl: '../../../assets/images/cat2.png',
+      title: 'Residential',
+      description: 'Coding Platform'
+    },
+    {
+      imageUrl: '../../../assets/images/cat2.png',
+      title: 'Residential',
+      description: 'Coding Platform'
+
+      
+    },
+    
+    
     // Add other items as needed
   ];
   step: number = 1;
@@ -170,29 +174,29 @@ export class CategoryComponent implements AfterViewInit , OnInit  {
   }
 
 
-  onUseGreenSok() {
-    let sections: any[] = gsap.utils.toArray(
-      '.catagory '
-    );
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: 'none',
-      target: 'catagory',
-      scrollTrigger: {
-        trigger: '.catagory ',
-        pin: true,
-        start: 'bottom bottom',
-        scrub: 1,
-        snap: 1 / (sections.length ),
-        end: () =>
-          '+=' +
-          (
-            document.querySelector(
-              '.catagory'
-            ) as HTMLElement
-          ).offsetWidth,
-      },
-    });
-  }
+  // onUseGreenSok() {
+  //   let sections: any[] = gsap.utils.toArray(
+  //     '.catagory '
+  //   );
+  //   gsap.to(sections, {
+  //     xPercent: -100 * (sections.length ),
+  //     ease: 'none',
+  //     target: 'catagory',
+  //     scrollTrigger: {
+  //       trigger: '.catagory ',
+  //       pin: true,
+  //       start: 'bottom bottom',
+  //       scrub: 1,
+  //       snap: 1 / (sections.length ),
+  //       end: () =>
+  //         '+=' +
+  //         (
+  //           document.querySelector(
+  //             '.catagory'
+  //           ) as HTMLElement
+  //         ).offsetWidth,
+  //     },
+  //   });
+  // }
   
 }
