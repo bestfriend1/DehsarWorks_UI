@@ -107,6 +107,8 @@
             //   margin-bottom: 10px;
 
                a {
+                font-size: clamp(32px , 40px , 64px);
+                font-family: groteskSemi;
                 color: #fff;
                 text-decoration: none;
               }
@@ -148,7 +150,7 @@
         font-size: 20px;
         font-weight: 500;
         display: flex;
-        gap: 60px;
+        // gap: 60px;
         list-style: none;
         padding-top: 0px;
         padding-right: 75px;
@@ -222,10 +224,30 @@
               top: 9%;
               left: 0;
               width: 100%;
-              height: 0;
+              height: 0%;
               background-color: #fffdfd;
               overflow: hidden;
               transition: height 0.3s ease;
+
+
+              .address{
+                span{
+                  font-family: grotesk;
+                  font-size: 15px;
+                  text-align: left;
+                  padding-left: 5%;
+                }
+
+                .spn{
+                  font-size: 14px;
+                  font-family: grotesk;
+                  padding-left: 5%;
+                  
+
+                }
+              }
+
+              
     
               ul {
                 list-style: none;
@@ -233,26 +255,38 @@
                 margin: 0;
                 display: grid;
                 justify-content: left;
-                gap: 15%;
+                // gap: 15%;
+                gap: 0;
+
+                
+          
     
                 li {
                   display: block;
-                  padding-top: 20%;
+                  // padding-top: 20%;
                   // margin-left: 3%;
-                  font-family: grotesk;
-                  font-size: 20px;
+                  
                 //   margin-bottom: 10px;
     
+                
+          
                    a {
-                    color: #020202;
-                    text-decoration: none;
+                    h4{
+                      margin: 0;
+                      font-family: grotesk;
+                      font-size:64px;
+                      color: #6d6a6a;
+                      text-decoration: none;
+                    }
                   }
                 }
+
+                
               }
             }
     
             .slide-menu.active {
-              height: 50%; // Adjust height as needed
+              height: 100svh; // Adjust height as needed
               width: 100%;
             }
           }
