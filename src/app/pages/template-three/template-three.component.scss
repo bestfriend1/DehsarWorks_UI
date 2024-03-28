@@ -1330,8 +1330,8 @@
             display: grid;
             grid-template-columns: 1.3fr 1.9fr;
             gap: 5%;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            // border-top: 1px solid black;
+            // border-bottom: 1px solid black;
             font-size: 14px;
             font-family: grotesk;
           }
@@ -1347,7 +1347,7 @@
             grid-template-columns: 1.3fr 1.9fr;
             gap: 5%;
             // border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            // border-bottom: 1px solid black;
           }
 
           .box3 {
@@ -1361,7 +1361,7 @@
             grid-template-columns: 1.3fr 1.9fr;
             gap: 5%;
             // border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            // border-bottom: 1px solid black;
           }
         }
       }
@@ -1422,8 +1422,8 @@
               width: 100%;
               display: grid;
               grid-template-columns: 0.7fr 0.7fr;
-              border-top: 1px solid black;
-              border-bottom: 1px solid black;
+              // border-top: 1px solid black;
+              // border-bottom: 1px solid black;
             }
 
             .box2 {
@@ -1436,7 +1436,7 @@
               display: grid;
               grid-template-columns: 0.7fr 0.7fr;
               // border-top: 1px solid black;
-              border-bottom: 1px solid black;
+              // border-bottom: 1px solid black;
             }
 
             .box3 {
@@ -1449,7 +1449,7 @@
               display: grid;
               grid-template-columns: 0.7fr 0.7fr;
               // border-top: 1px solid black;
-              border-bottom: 1px solid black;
+              // border-bottom: 1px solid black;
             }
 
             .box4 {
@@ -1462,7 +1462,7 @@
               display: grid;
               grid-template-columns: 0.7fr 0.7fr;
               // border-top: 1px solid black;
-              border-bottom: 1px solid black;
+              // border-bottom: 1px solid black;
 
               .subtitle {
                 hr {
