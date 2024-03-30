@@ -1,0 +1,171 @@
+@import'../../../theme/variables';
+.section{
+    .section-main{
+        padding-left: 500px;
+    }
+}
+@media(max-width:1100px){
+    .section{
+        .section-main{
+            padding-left: 400px;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .section{
+        .section-main{
+            padding-left: 0px;
+        }
+    }
+}
+
+
+
+/* --- SIDE BAR CSS --- */
+.side-bar{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 500px;
+    z-index: 200;
+    padding: 48px 50px 15px 50px;
+    height: calc(100vh - 82.1px);
+    overflow-y: auto;
+    background-color: $color-white;
+}
+@media(max-width:1100px){
+    .side-bar{
+        padding: 48px 15px 15px 15px;
+        max-width: 400px;
+    }
+}
+@media(max-width:1000px){
+    .side-bar{
+        display: none;
+    }
+}
+
+/* ---  NEWS AREA CSS --- */
+
+.news-area{
+    padding: 125px 30px 20px 30px;
+    .news-description-area{
+        margin-bottom: 45px;
+        p{
+            color: $color-black;
+            font-family: $font-en-primary;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    .news-details-img{
+        margin-bottom: 30px;
+        &:last-child{
+            margin: 0px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+@media(max-width:1100px){
+    .news-area{
+        padding-inline: 15px;
+    }
+}
+
+@media(max-width:1000px){
+    .news-area{
+        padding: 102px 50px 20px 50px;
+    }
+}
+
+@media(max-width:800px){
+    .news-area{
+        padding: 81px 15px 20px 15px;
+        .news-description-area{
+            margin-bottom: 20px;
+        }
+        .news-details-img{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+/* ---- NEWS CARD CSS --- */
+.news-card{
+    cursor: pointer;
+    &.responsive-card{
+        display: none;
+        margin-bottom: 25px!important;
+    }
+    .news-img{
+        width: 100%;
+        margin-bottom: 17px;
+    }
+    .news-card-body{
+        h3{
+            color: $color-black;
+            font-family: $font-en-primary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            line-height: 25px;
+            margin-bottom: 14px!important;
+        }
+        p{
+            color: $color-black;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .news-card{
+        &.responsive-card{
+            display: block;
+        }
+    }
+}
+
+
+/* ---- NTT CSS AREA --- */
+.ntt-area{
+    padding-top: 50px;
+    text-align: right;
+    p{
+        color: $color-black;
+        font-family: $font-en-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: normal;
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .ntt-area{
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+    }
+}
