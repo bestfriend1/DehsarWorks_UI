@@ -1,0 +1,218 @@
+@import'../../../theme/variables';
+.section{
+    .section-main{
+        padding-left: 350px;
+    }
+}
+
+@media(max-width:1000px){
+    .section{
+        .section-main{
+            padding-left: 0px;
+            padding-top: 82px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .section{
+        .section-main{
+            padding-top: 61px;
+        }
+    }
+}
+
+
+/* --- SIDE BAR CSS --- */
+.side-bar{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 350px;
+    z-index: 200;
+    padding: 48px 15px 15px 50px;
+    height: calc(100vh - 82.1px);
+    overflow-y: auto;
+    background-color: $color-white;
+    border-right: 1px solid #f6f6f6;
+    h3{
+        font-family: $font-en-primary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: normal;
+        display: block;
+    }
+}
+@media(max-width:1000px){
+    .side-bar{
+        display: none;
+    }
+}
+
+/* --- Team AREA CSS --- */
+
+.team-area{
+    padding: 135px 30px 30px 30px;
+    .team-description-area{
+        margin-bottom: 65px;
+        h3{
+            color: $color-black;
+            font-family: $font-en-primary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 25px;
+            display: none;
+            margin-bottom: 15px!important;
+        }
+        p{
+            color: $color-black;
+            font-family: $font-en-primary;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    .team-area-main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px 20px;
+        
+    }
+}
+
+.team-card{
+    cursor: pointer;
+    .team-img{
+        margin-bottom: 20px;
+    }
+    .team-body{
+        a{
+            color: $color-black;
+            font-family: $font-en-primary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 10px!important;
+        }
+        p{
+            color: $color-black;
+            font-family: $font-en-primary;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: normal;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+            li{
+                a{
+                    svg{
+                        transition: all 0.3s linear;
+                        &.fill{
+                            display: none;
+                        }
+                        &.outline{
+                            display: block;
+                        }
+                    }
+                    &:hover{
+                        svg{
+                            &.fill{
+                                display: block;
+                            }
+                            &.outline{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:1000px){
+    .team-area{
+        padding: 20px 55px 20px 55px;
+        .team-description-area{
+            margin-bottom: 30px;
+            h3{
+                display: block;
+            }
+            p{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:1300px){
+    .team-area{
+        .team-area-main{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media(max-width:800px){
+    .team-area{
+        padding: 20px 15px 20px 15px;
+    }
+}
+
+
+@media(max-width:650px){
+    .team-area{
+        .team-description-area{
+            margin-bottom: 20px;
+        }
+        .team-area-main{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .team-card{
+        border: 1px solid #eee;
+        .team-body{
+            padding: 0px 12px;
+        }
+    }
+}
+
+
+/* ---- NTT CSS AREA --- */
+.ntt-area{
+    padding: 60px 50px 0px 50px;
+    text-align: right;
+    p{
+        color: $color-black;
+        font-family: $font-en-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: normal;
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .ntt-area{
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+    }
+}

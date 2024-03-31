@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="header-main">
+        <div class="logo">
+            <img src="./assets/images/brand/logo/logo.svg" alt="">
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li><a routerLink="/work" routerLinkActive="active">Works</a></li>
+                <li><a routerLink="/news" routerLinkActive="active">News</a></li>
+                <li><a routerLink="/team" routerLinkActive="active">About</a></li>
+                <li><a routerLink="/contact-us" routerLinkActive="active">Connect</a></li>
+            </ul>
+        </div>
+        <div class="icon-bar" (click)="onToggleMenu()" [ngClass]="{'active':isMenuActive === true}">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+        </div>
+    </div>
+    <div class="toggle-menu" [ngClass]="{'active':isMenuActive === true}" >
+        <ul>
+            <li><a routerLink="/work" routerLinkActive="active">Works</a></li>
+            <li><a routerLink="/news" routerLinkActive="active">News</a></li>
+            <li><a routerLink="/team" routerLinkActive="active">About</a></li>
+            <li><a routerLink="/contact-us" routerLinkActive="active">Connect</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,241 @@
+@import'../../../theme/variables';
+.section{
+    .section-main{
+        padding-left: 350px;
+    }
+}
+
+@media(max-width:1000px){
+    .section{
+        .section-main{
+            padding-left: 0px;
+            padding-top: 82px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .section{
+        .section-main{
+            padding-top: 61px;
+        }
+    }
+}
+
+/* --- MENU AREA --- */
+.menu-area{
+    padding: 17px 15px 17px 54px;
+    box-sizing: border-box;
+    display: none;
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        li{
+            a{
+                color: $color-black;
+                font-family: $font-en-primary;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                cursor: pointer;
+                i{
+                    font-size: 16px;
+                }
+                &.active{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .menu-area{
+        padding: 17px 15px 17px 15px;
+        display: block;
+    }
+}
+
+/* --- SIDE BAR CSS --- */
+.side-bar{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 350px;
+    z-index: 200;
+    padding: 48px 15px 15px 50px;
+    height: calc(100vh - 82.1px);
+    overflow-y: auto;
+    background-color: $color-white;
+    border-right: 1px solid #f6f6f6;
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li{
+            a{
+                color: $text-color;
+                font-family:$font-en-primary;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 19px;
+                line-height: 24px;
+                padding: 12px 10px;
+                box-sizing: border-box;
+                transition: all 0.3s linear;
+                &.active{
+                    color: $color-black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1000px){
+    .side-bar{
+        height: calc(100vh - 136px);
+        left: -100%;
+        transition: all 0.3s linear;
+        &.active-slide{
+            left: 0px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .side-bar{
+        height: calc(100vh - 115px);
+        padding: 15px 15px;
+    }
+}
+
+/* ---  WORK AREA CSS --- */
+
+.work-area{
+    padding: 142px 15px 20px 15px;
+    .work-area-main{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+        
+    }
+}
+
+.work-card{
+    position: relative;
+    cursor: pointer;
+    .work-img{
+        img{
+            min-height: 345px;
+            object-fit: contain;
+        }
+    }
+    .work-hover{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s linear;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(0 0 0 / 40%);
+        }
+        img{
+            transform: scale(1);
+            transition: all 2.5s ease;
+        }
+        .work-info{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            h3{
+                color: $color-white;
+                font-family: $font-en-primary;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 25px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &:hover{
+        .work-hover{
+            visibility: visible;
+            opacity: 1;
+            img{
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+@media(max-width:1500px){
+    .work-area{
+        .work-area-main{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media(max-width:1150px){
+    .work-area{
+        .work-area-main{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .work-area{
+        padding: 20px 55px 20px 55px;
+        .work-area-main{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .work-area{
+        padding: 20px 15px 20px 15px;
+    }
+}
+
+
+@media(max-width:650px){
+    .work-area{
+        .work-area-main{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .work-card{
+        border: 1px solid #eee;
+    }
+}

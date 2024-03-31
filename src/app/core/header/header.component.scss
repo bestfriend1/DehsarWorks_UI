@@ -1,0 +1,156 @@
+@import'../../../theme/variables';
+.header{
+    border-bottom: 1px solid #F6F6F6;
+    padding: 22px 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+    width: 100%;
+    background-color: $color-white;
+    .header-main{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        .logo{
+
+            img{
+                width: 62px;
+                height: 37px;
+            }
+        }
+        .header-menu{
+            ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 45px;
+                li{
+                    a{
+                        color: $text-color;
+                        font-family: $font-en-primary;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 300;
+                        display: block;
+                        transition: all 0.3s linear;
+                        &.active{
+                            color: $color-black;
+                            font-weight: 600;
+                        }
+                        &:hover{
+                            color: $color-black;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        .icon-bar{
+            width: 24px;
+            height: 24px;
+            display: none;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            span{
+                background-color: #000000;
+                width: 100%;
+                height: 2px;
+                display: block;
+                transition: all 0.3s linear;
+            
+            }
+
+            &.active {
+                span {
+                  &.line-2 {
+                    display: none;
+                  }
+      
+                  &.line-1 {
+                    width: 100%;
+                    transform: rotate(45deg) translateX(5px);
+                  }
+      
+                  &.line-3{
+                    width: 100%;
+                    transform: rotate(-45deg) translate(8px, -4px);
+      
+                  }
+                }
+      
+              }
+        }
+    }
+    .toggle-menu{
+        position: absolute;
+        top: 100%;
+        transition: all 0.3s linear;
+        left: 0px;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 200;
+        width: 100%;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        transition: all 0.3s linear;
+        background-color: $color-white;
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            li{
+                display: block;
+                a{
+                    color: $color-black;
+                    font-family: $font-en-primary;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    padding: 8px 6px;
+                    box-sizing: border-box;
+                    transition: all 0.3 linear;
+                    width: 100%;
+                    &.active{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        &.active{
+            height: 204px;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .header{
+        padding: 15px 15px;
+        .header-main{
+            .logo{
+
+                img{
+                    width: 45px;
+                    height: 30px;
+                }
+            }
+            .header-menu{
+                display: none;
+            }
+            .icon-bar{
+                display: flex;
+            }
+        }
+    }
+}

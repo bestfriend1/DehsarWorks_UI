@@ -1,0 +1,106 @@
+@import'../../../theme/variables';
+.section-news{
+    padding: 122px 50px 40px 50px;
+    .section-main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 40px 20px;
+    }
+}
+
+@media(max-width:1350px){
+    .section-news{
+        .section-main{
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px 20px;
+        }
+    }
+
+}
+
+@media(max-width:1000px){
+    .section-news{
+        .section-main{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px 20px;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .section-news{
+        padding-inline: 15px;
+        padding-block: 90px 30px;
+        .section-main{
+            grid-gap: 25px 20px;
+        }
+    }
+}
+@media(max-width:600px){
+    .section-news{
+        .section-main{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+        }
+    }
+}
+
+/* ---- NEWS CARD CSS --- */
+
+.news-card{
+    cursor: pointer;
+    .news-img{
+        width: 100%;
+        margin-bottom: 17px;
+    }
+    .news-card-body{
+        h3{
+            color: $color-black;
+            font-family: $font-en-primary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            line-height: 25px;
+            margin-bottom: 14px!important;
+        }
+        p{
+            color: $color-black;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+}
+
+
+/* ---- NTT CSS AREA --- */
+.ntt-area{
+    padding: 40px 50px 40px 50px;
+    text-align: right;
+    p{
+        color: $color-black;
+        font-family: $font-en-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: normal;
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media(max-width:800px){
+    .ntt-area{
+        text-align: center;
+        padding: 20px 15px;
+    }
+}

@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 import { TemplateTwoComponent } from './pages/template-two/template-two.component';
 import { TemplateThreeComponent } from './pages/template-three/template-three.component';
 import { CategoryComponent } from './pages/category/category.component';
+import { HeaderModule } from './core/header/header.module';
 
 
 
@@ -35,6 +36,7 @@ import { CategoryComponent } from './pages/category/category.component';
     AppRoutingModule,
     NgbModule,
     CommonModule,
+    HeaderModule
     
   ],
   providers: [],
