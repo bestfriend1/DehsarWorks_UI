@@ -38,7 +38,8 @@
           display: flex;
           overflow: hidden;
           scroll-behavior: smooth;
-  
+          margin-left: 2%;
+          margin-right: 2%;
           &.dragging {
             scroll-behavior: auto;
             cursor: grabbing;
@@ -46,7 +47,7 @@
   
           .slider__item {
             padding: 16px 10px;
-            margin-left: 2%;
+            margin-left: 1%;
             flex: 0 0 auto;
             // width: calc(100% / 5);
   
@@ -168,6 +169,8 @@
                 display: flex;
                 overflow: hidden;
                 scroll-behavior: smooth;
+                margin-left: 2%;
+                margin-right: 2%;
         
                 &.dragging {
                   scroll-behavior: auto;

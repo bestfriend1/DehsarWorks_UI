@@ -26,6 +26,7 @@
     "gsap": "^3.12.5",
     "hamburgers": "^1.2.1",
     "jquery": "^3.7.1",
+    "locomotive-scroll": "^4.1.4",
     "ngx-wow": "^2.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
