@@ -14,7 +14,7 @@
             h1 {
                   font-size: 64px;
                   font-family: groteskMed;
-                  margin-left: 3%;
+                  padding-left: 3%;
             }
 
             .spans {
@@ -85,7 +85,8 @@
                         grid-template-columns: 1fr;
                         column-gap: 10px;
                         height: 50%;
-
+                        font-family: grotesk;
+                        font-size: 20px;
                         hr{
                               color: inherit;
                               border: 0;
@@ -107,6 +108,8 @@
                         }
 
                         .box2 {
+                              padding-top: 2%;
+                              padding-bottom: 1%;
                               height: auto;
                               width: 100%;
                               display: grid;
@@ -116,6 +119,8 @@
                         }
 
                         .box3 {
+                              padding-top: 2%;
+                              padding-bottom: 1%;
                               height: auto;
                               width: 100%;
                               display: grid;
@@ -123,6 +128,37 @@
                               // border-top: 1px solid black;
                               // border-bottom: 1px solid black;
                         }
+
+                        .box4 {
+                              padding-top: 2%;
+                              padding-bottom: 1%;
+                              height: auto;
+                              width: 100%;
+                              display: grid;
+                              grid-template-columns: 0.7fr 0.7fr;
+                              // border-top: 1px solid black;
+                              // border-bottom: 1px solid black;
+                            }
+                            .box5 {
+                              padding-top: 2%;
+                              padding-bottom: 1%;
+                              height: auto;
+                              width: 100%;
+                              display: grid;
+                              grid-template-columns: 0.7fr 0.7fr;
+                              // border-top: 1px solid black;
+                              // border-bottom: 1px solid black;
+                            }
+                            .box6 {
+                              padding-top: 2%;
+                              padding-bottom: 1%;
+                              height: auto;
+                              width: 100%;
+                              display: grid;
+                              grid-template-columns: 0.7fr 0.7fr;
+                              // border-top: 1px solid black;
+                              // border-bottom: 1px solid black;
+                            }
                   }
 
                   
@@ -147,6 +183,47 @@
                   position: relative;
                 }
                 
+
+                .pill{
+                  background: rgba( 255, 255, 255, 0.25 );
+                  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                  backdrop-filter: blur( 4px );
+                  -webkit-backdrop-filter: blur( 4px );
+                  border-radius: 178px;
+                  border: 1px solid rgba( 255, 255, 255, 0.18 );
+                  height: 4%;
+                  width: 15%;
+            
+                  z-index: 1;
+                  width: 5%;
+                  position: absolute;
+                  
+                  top: 95%;
+                  left: 50%;
+                  transform: translate(-50%);
+            
+                  .prev {
+                  // position: absolute;
+                  // top: 90%;
+                  
+                  background: rgba(206, 55, 55, 0);
+                  height: 100%;
+                  width: 3%;
+                  left: 0rem;
+                  color: white;
+                }
+            
+                .next {
+                  // position: absolute;
+                  // top: 90%;
+                  background: rgba(255, 255, 255, 0);
+                  height: 100%;
+                  width: 3%;
+                  right: .5rem;
+                  color: white;
+                }
+            }
+
                 .carousel-btn {
                   position: absolute;
                   top: 50%;
@@ -159,15 +236,15 @@
                   z-index: 2;
                 }
                 
-                .prev {
-                  height: 100%;
-                  left: 0rem;
-                }
+            //     .prev {
+            //       height: 100%;
+            //       left: 0rem;
+            //     }
                 
-                .next {
-                  height: 100%;
-                  right: 0rem;
-                }
+            //     .next {
+            //       height: 100%;
+            //       right: 0rem;
+            //     }
                 
                 .carousel {
                   display: flex;
@@ -186,8 +263,8 @@
                 }
                 
                 .carousel img {
-                  width: calc(90% - 20px);
-                  height: calc(100% - 20px);
+                  width: calc(100% - 0px);
+                  height: calc(100% - 500px);
                   margin: 10px;
                   margin-top: 3%;
                   flex-shrink: 0;

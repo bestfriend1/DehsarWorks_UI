@@ -59,6 +59,34 @@
                         </div>
                   </div>
                   <hr class="wow" data-wow-delay=".8s" />
+                  <div class="box4 wow animate__fadeIn" data-wow-delay="1.5s">
+                        <div class="title">
+                              Design Period:  
+                        </div>
+                        <div class="subtitle">
+                              July 2015-Oct 2016
+                        </div>
+                  </div>
+                  <hr class="wow" data-wow-delay=".8s" />
+                  <div class="box5 wow animate__fadeIn" data-wow-delay="1.5s">
+                        <div class="title">
+                              Construction Period: 
+                        </div>
+                        <div class="subtitle">
+                              November 2015-January 2017 
+                        (active construction period 6 months)
+                        </div>
+                  </div>
+                  <hr class="wow" data-wow-delay=".8s" />
+                  <div class="box6 wow animate__fadeIn" data-wow-delay="1.5s">
+                        <div class="title">
+                              Status: 
+                        </div>
+                        <div class="subtitle">
+                              Operational from January 2017
+                        </div>
+                  </div>
+                  <hr class="wow" data-wow-delay=".8s" />
             </div>
       </div>
 
@@ -70,13 +98,17 @@
   <section class="three" >
       
       <div class="carousel-container">
-            <button class="carousel-btn prev" (click)="scroll(-1)">&#10094;</button>
+      
             <div class="carousel">
-              <img *ngFor="let url of imageUrls" [src]="url">
+              <img *ngFor="let url of imageUrls" [src]="url" />
             </div>
-            <button class="carousel-btn next" (click)="scroll(1)">&#10095;</button>
+            <div class="pill">
+      
+              <button class="carousel-btn prev" (click)="scroll(-1)">&#10094;</button>
+              <button class="carousel-btn next" (click)="scroll(1)">&#10095;</button>
+            </div>
             
-      </div>
+          </div>
 
       <div class="descriptions">
             

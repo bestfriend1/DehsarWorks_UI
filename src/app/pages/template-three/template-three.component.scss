@@ -145,6 +145,8 @@
         }
 
         .box2 {
+          padding-top: 2%;
+          padding-bottom: 1%;
           height: auto;
           width: 100%;
           display: grid;
@@ -154,7 +156,41 @@
         }
 
         .box3 {
+          padding-top: 2%;
+          padding-bottom: 1%;
           padding-top: 1%;
+          height: auto;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 0.7fr 0.7fr;
+          // border-top: 1px solid black;
+          // border-bottom: 1px solid black;
+        }
+
+
+        .box4 {
+          padding-top: 2%;
+          padding-bottom: 1%;
+          height: auto;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 0.7fr 0.7fr;
+          // border-top: 1px solid black;
+          // border-bottom: 1px solid black;
+        }
+        .box5 {
+          padding-top: 2%;
+          padding-bottom: 1%;
+          height: auto;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 0.7fr 0.7fr;
+          // border-top: 1px solid black;
+          // border-bottom: 1px solid black;
+        }
+        .box6 {
+          padding-top: 2%;
+          padding-bottom: 1%;
           height: auto;
           width: 100%;
           display: grid;
