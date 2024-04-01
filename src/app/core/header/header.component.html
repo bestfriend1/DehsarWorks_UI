@@ -1,4 +1,73 @@
 <div class="header">
+  <div class="header-main">
+    <div class="logo" >
+      <img routerLink="/" src="./assets/images/brand/logo/logo.svg" alt=""   />
+    </div>
+    <div class="header-menu">
+      <ul>
+        <li><a routerLink="/work" routerLinkActive="active">Works</a></li>
+        <li><a routerLink="/news" routerLinkActive="active">News</a></li>
+        <li><a routerLink="/team" routerLinkActive="active">About</a></li>
+        <li>
+          <a routerLink="/contact-us" routerLinkActive="active">Connect</a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="icon-bar"
+      (click)="onToggleMenu()"
+      [ngClass]="{ active: isMenuActive === true }"
+    >
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
+    </div>
+  </div>
+  <div class="toggle-menu" [ngClass]="{ active: isMenuActive === true }">
+    <hr />
+    <ul>
+      <li>
+        <a routerLink="/work" routerLinkActive="active" (click)="closeMenu()"
+          >Works</a
+        >
+      </li>
+      <li>
+        <a routerLink="/news" routerLinkActive="active" (click)="closeMenu()"
+          >News</a
+        >
+      </li>
+      <li>
+        <a routerLink="/team" routerLinkActive="active" (click)="closeMenu()"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/contact-us"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+          >Connect</a
+        >
+      </li>
+    </ul>
+    <hr />
+
+    <div class="address">
+      <span>House 82, Road 05, Block F, Banani, Dhaka 1213</span><br />
+      <span>+8801796064118</span><br />
+      <span>info@dehsarworks.com</span><br />
+      <span>Available Time- 8 AM - 5 PM</span> <br />
+
+      <span class="spn">Facebook</span>
+      <span class="spn">Instagram</span>
+      <span class="spn">LinkedIn</span>
+    </div>
+
+    <h6>Copyright by Dehsarworks 2024. All rights are reserved</h6>
+  </div>
+</div>
+
+<!-- <div class="header">
     <div class="header-main">
         <div class="logo">
             <img src="./assets/images/brand/logo/logo.svg" alt="">
@@ -25,4 +94,4 @@
             <li><a routerLink="/contact-us" routerLinkActive="active">Connect</a></li>
         </ul>
     </div>
-</div>
+</div> -->

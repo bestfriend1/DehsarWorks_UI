@@ -103,6 +103,11 @@
         box-sizing: border-box;
         transition: all 0.3s linear;
         background-color: $color-white;
+
+
+
+        
+
         ul{
             list-style: none;
             padding: 0px;
@@ -110,27 +115,56 @@
             li{
                 display: block;
                 a{
-                    color: $color-black;
-                    font-family: $font-en-primary;
+                    color: #524C4C;
+                    font-family: grotesk;
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 18px;
-                    line-height: 25px;
+                    font-size: 64px;
+                    line-height: 50px;
                     padding: 8px 6px;
                     box-sizing: border-box;
                     transition: all 0.3 linear;
                     width: 100%;
                     &.active{
+                        color: black;
                         font-weight: 700;
                     }
                 }
             }
         }
         &.active{
-            height: 204px;
+            height: 100dvh;
             visibility: visible;
             opacity: 1;
         }
+
+        .address{
+            padding-top: 30%;
+            span{
+              font-family: grotesk;
+              font-size: 15px;
+              text-align: left;
+              padding-left: 3%;
+              line-height: 5px;
+              font-weight: 500;
+              color: black;
+            }
+
+            .spn{
+              font-size: 14px;
+              font-family: grotesk;
+              padding-left: 3%;
+              color: #000000 !important;
+
+            }
+          }
+
+          h6{
+            font-size: 13px;
+            font-family: grotesk;
+            text-align: center;
+            padding-top: 20%;
+          }
     }
 }
 

@@ -348,31 +348,41 @@
                   //     }
 
                   button {
-                        background-color: #666;
-                        border: medium none;
-                        color: #fff;
-                        display: block;
-                        font-size: 18px;
-                        left: 0;
-                        margin: 0 auto;
-                        padding: 8px 16px;
-                        position: absolute;
-                        right: 0;
-                        top: 35%;
-                        transform: translateY(-50%);
-                        width: 5rem;
-                        height: 5rem;
-                        border-radius: 50px;
-                  }
-
-                  .active {
-                        height: 5rem;
-                        width: 5rem;
-                  }
-
-                  button.active {
+                        position: relative;
+                      background: rgba(197, 185, 185, 0.25);
+                      // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                      // backdrop-filter: blur( 4px );
+                      // -webkit-backdrop-filter: blur( 4px );
+                      border: none;
+                      border-radius: 178px;
+                      // border: 1px solid rgba( 255, 255, 255, 0.18 );
+                      height: 48px;
+                      width: 117px;
+                      font-size: 18px;
+              
+                      top: 30%;
+                      left: 5%;
+                      transform: translate(-50%);
+                      margin: 0 auto;
+                      // padding: 8px 16px;
+                      position: absolute;
+                      right: 0;
+                      
+                      
+                      
+                      // transform: translateY(-50%);
+                      color: white;
+                      // border-radius: 50px;
+                      }
+              
+                      // .active {
+                      //       height: 3rem;
+                      //       width: 3rem;
+                      // }
+              
+                      button.active {
                         background-color: #5455559d;
-                  }
+                      }
 
                   video {
                         position: relative;
@@ -849,31 +859,41 @@
                         //     }
 
                         button {
-                              background-color: #666;
-                              border: medium none;
-                              color: #fff;
-                              display: block;
-                              font-size: 18px;
-                              left: 0;
-                              margin: 0 auto;
-                              padding: 8px 16px;
-                              position: absolute;
-                              right: 0;
-                              top: 20%;
-                              transform: translateY(-50%);
-                              width: 3rem;
-                              height: 3rem;
-                              border-radius: 50px;
-                        }
-
-                        // .active {
-                        //       height: 3rem;
-                        //       width: 3rem;
-                        // }
-
-                        button.active {
+                              position: relative;
+                            background: rgba(197, 185, 185, 0.25);
+                            // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                            // backdrop-filter: blur( 4px );
+                            // -webkit-backdrop-filter: blur( 4px );
+                            border: none;
+                            border-radius: 178px;
+                            // border: 1px solid rgba( 255, 255, 255, 0.18 );
+                            height: 48px;
+                            width: 117px;
+                            font-size: 18px;
+                    
+                            top: 20%;
+                            left: 25%;
+                            transform: translate(-50%);
+                            margin: 0 auto;
+                            // padding: 8px 16px;
+                            position: absolute;
+                            right: 0;
+                            
+                            
+                            
+                            // transform: translateY(-50%);
+                            color: white;
+                            // border-radius: 50px;
+                            }
+                    
+                            // .active {
+                            //       height: 3rem;
+                            //       width: 3rem;
+                            // }
+                    
+                            button.active {
                               background-color: #5455559d;
-                        }
+                            }
 
                         video {
                               position: relative;

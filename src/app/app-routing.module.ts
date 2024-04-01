@@ -7,6 +7,8 @@ import { TemplateThreeComponent } from './pages/template-three/template-three.co
 import { PagesComponent } from './pages/pages.component';
 
 const routes: Routes = [
+
+  
   {
     path: "",
     component: PagesComponent,

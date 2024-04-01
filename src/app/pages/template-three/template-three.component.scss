@@ -20,7 +20,7 @@
     h1 {
       font-size: 64px;
       font-family: groteskMed;
-      margin-left: 3%;
+      padding-left: 3%;
     }
 
     .spans {
@@ -52,7 +52,7 @@
       //   cursor: pointer; /* Add a pointer on hover */
       // }
       img {
-        animation: revealImageBig1 .7s linear forwards;
+        animation: revealImageBig1 .3s linear forwards;
         clip-path: inset(0 0 0  100%);
         padding-top: 5px;
         width: 100%;
@@ -121,6 +121,9 @@
         grid-template-columns: 1fr;
         column-gap: 10px;
         height: 50%;
+        font-size: 20px;
+        font-family: grotesk;
+        
           hr{
             color: inherit;
             border: 0;
@@ -212,7 +215,7 @@
 
         .box1 {
           font-family: grotesk;
-          font-size: 14px;
+          font-size: 20px;
           padding-top: 1.8%;
           padding-bottom: 1.8%;
           height: auto;
@@ -225,7 +228,7 @@
 
         .box2 {
           font-family: grotesk;
-          font-size: 14px;
+          font-size: 20px;
           padding-top: 1.8%;
           padding-bottom: 1.8%;
           height: auto;
@@ -238,7 +241,7 @@
 
         .box3 {
           font-family: grotesk;
-          font-size: 14px;
+          font-size: 20px;
           padding-top: 1.8%;
           padding-bottom: 1.8%;
           height: auto;
@@ -251,7 +254,7 @@
 
         .box4 {
           font-family: grotesk;
-          font-size: 14px;
+          font-size: 20px;
           padding-top: 1.8%;
           padding-bottom: 1.8%;
           height: auto;
@@ -276,7 +279,7 @@
 
         .box5 {
           font-family: grotesk;
-          font-size: 14px;
+          font-size: 20px;
           padding-top: 1.8%;
           padding-bottom: 1.8%;
           height: auto;
@@ -289,7 +292,7 @@
 
         .box6 {
           font-family: grotesk;
-          font-size: 14px;
+          font-size: 20px;
           padding-top: 1.8%;
           padding-bottom: 1.8%;
           height: auto;
@@ -333,30 +336,33 @@
       //     }
 
       button {
-        background-color: #666;
-        border: medium none;
-        color: #fff;
-        display: block;
+        position: relative;
+        background: rgba(197, 185, 185, 0.25);
+        // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        // backdrop-filter: blur( 4px );
+        // -webkit-backdrop-filter: blur( 4px );
+        border: none;
+        border-radius: 178px;
+        // border: 1px solid rgba( 255, 255, 255, 0.18 );
+        height: 48px;
+        width: 117px;
         font-size: 18px;
         left: 0;
         margin: 0 auto;
-        padding: 8px 16px;
+        // padding: 8px 16px;
         position: absolute;
         right: 0;
         top: 35%;
-        transform: translateY(-50%);
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50px;
+        transform: translate(-50%);
+        // transform: translateY(-50%);
+        color: white;
+        // border-radius: 50px;
       }
 
-      .active {
-        height: 5rem;
-        width: 5rem;
-      }
+      
 
       button.active {
-        background-color: #5455559d;
+        
       }
 
       video {
@@ -1570,21 +1576,31 @@
         //     }
 
         button {
-          background-color: #666;
-          border: medium none;
-          color: #fff;
-          display: block;
-          font-size: 18px;
-          left: 0;
-          margin: 0 auto;
-          padding: 8px 16px;
-          position: absolute;
-          right: 0;
-          top: 20%;
-          transform: translateY(-50%);
-          width: 3rem;
-          height: 3rem;
-          border-radius: 50px;
+          position: relative;
+        background: rgba(197, 185, 185, 0.25);
+        // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        // backdrop-filter: blur( 4px );
+        // -webkit-backdrop-filter: blur( 4px );
+        border: none;
+        border-radius: 178px;
+        // border: 1px solid rgba( 255, 255, 255, 0.18 );
+        height: 48px;
+        width: 117px;
+        font-size: 18px;
+
+        top: 20%;
+        left: 25%;
+        transform: translate(-50%);
+        margin: 0 auto;
+        // padding: 8px 16px;
+        position: absolute;
+        right: 0;
+        
+        
+        
+        // transform: translateY(-50%);
+        color: white;
+        // border-radius: 50px;
         }
 
         // .active {

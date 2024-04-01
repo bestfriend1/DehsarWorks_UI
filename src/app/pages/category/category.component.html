@@ -7,8 +7,8 @@
       </p>
       
       <div class="slider">
-        <button class="slider__control prev" (click)="prevSlide()"><<i class="fa-solid fa-chevron-left"></i></button>
-        <button class="slider__control next" (click)="nextSlide()">><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="slider__control prev" (click)="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider__control next" (click)="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="slider__container" [attr.data-multislide]="false" [attr.data-step]="step" #sliderContainer>
           <div class="slider__item" *ngFor="let item of items">
   

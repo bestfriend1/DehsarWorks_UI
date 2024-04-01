@@ -20,4 +20,11 @@ export class HeaderComponent {
   };
 
 
+    closeMenu() {
+        this.isMenuActive = false; // Set isMenuActive to false to close the hamburger menu
+    }
+
+    
+
+
 }
