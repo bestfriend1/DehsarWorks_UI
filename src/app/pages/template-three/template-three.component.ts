@@ -18,7 +18,8 @@ export class TemplateThreeComponent implements AfterViewInit , OnInit  {
     'https://img.freepik.com/free-photo/young-woman-walking-wooden-path-with-green-rice-field-vang-vieng-laos_335224-1258.jpg',
     'https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg',
     'https://img.freepik.com/free-photo/cows-eating-lush-grass-green-field-front-fuji-mountain-japan_335224-36.jpg',
-    'https://img.freepik.com/free-photo/water-fall_335224-985.jpg'
+    'https://img.freepik.com/free-photo/water-fall_335224-985.jpg',
+    '../../../assets/images/car4.png'
   ];
 
   @ViewChild('sectionContainer', { static: true }) sectionContainer!: ElementRef<HTMLElement>;

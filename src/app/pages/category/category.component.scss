@@ -112,13 +112,16 @@
       }
   
       .footer{
-        background: white;
+        background: rgb(0, 0, 0);
+        color: white;
   
         h3{
           font-family: grotesk;
           font-size: 15px;
-          padding: .5% 0% .2% 2.5%;
-          text-align: right;
+          padding-left: 3%;
+          padding-bottom: 1%;
+          // padding: 0% 0% .2% 2.5%;
+          text-align: left;
   
         }
       }

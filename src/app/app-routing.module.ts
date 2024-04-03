@@ -5,6 +5,7 @@ import { IdeaSpaceComponent } from './pages/idea-space/idea-space.component';
 import { TemplateTwoComponent } from './pages/template-two/template-two.component';
 import { TemplateThreeComponent } from './pages/template-three/template-three.component';
 import { PagesComponent } from './pages/pages.component';
+import { TemplateFourComponent } from './pages/template-four/template-four.component';
 
 const routes: Routes = [
 
@@ -48,6 +49,10 @@ const routes: Routes = [
         path: 'temp3',
         component: TemplateThreeComponent
       },
+      {
+        path: 'temp4',
+        component : TemplateFourComponent
+      }
     ]
   },
 

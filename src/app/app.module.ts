@@ -13,6 +13,7 @@ import { TemplateTwoComponent } from './pages/template-two/template-two.componen
 import { TemplateThreeComponent } from './pages/template-three/template-three.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { HeaderModule } from './core/header/header.module';
+import { TemplateFourComponent } from './pages/template-four/template-four.component';
 
 
 
@@ -27,6 +28,7 @@ import { HeaderModule } from './core/header/header.module';
     TemplateTwoComponent,
     TemplateThreeComponent,
     CategoryComponent,
+    TemplateFourComponent,
     
     
     
