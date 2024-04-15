@@ -14,7 +14,8 @@ import { TemplateThreeComponent } from './pages/template-three/template-three.co
 import { CategoryComponent } from './pages/category/category.component';
 import { HeaderModule } from './core/header/header.module';
 import { TemplateFourComponent } from './pages/template-four/template-four.component';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 
@@ -38,7 +39,9 @@ import { TemplateFourComponent } from './pages/template-four/template-four.compo
     AppRoutingModule,
     NgbModule,
     CommonModule,
-    HeaderModule
+    HeaderModule,
+    BrowserAnimationsModule,
+    MatDialogModule
     
   ],
   providers: [],
