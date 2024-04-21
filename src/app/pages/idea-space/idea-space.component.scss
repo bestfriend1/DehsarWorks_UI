@@ -9,12 +9,13 @@
 .all {
   .one {
     position: relative;
-    padding-top: 10rem;
+    padding-top: 8rem;
 
     h1 {
       font-size: 64px;
       font-family: groteskMed;
       padding-left: 3%;
+      padding-bottom: 1.5%;
     }
 
     .spans {
@@ -27,6 +28,11 @@
       span {
         font-size: 20px;
         font-family: grotesk;
+      }
+
+      .locations{
+        position: relative;
+        top: 19rem;
       }
     }
 
@@ -680,7 +686,8 @@
           display: grid;
           grid-template-columns: 1fr;
           column-gap: 0px;
-
+          font-size: 14px;
+          padding-bottom: 10%;
           .box1 {
             padding-top: 2%;
             padding-bottom: 2%;
@@ -688,7 +695,7 @@
             width: 100%;
             display: grid;
             grid-template-columns: 1.3fr 1.9fr;
-            gap: 5%;
+            gap: 15%;
             // border-top: 1px solid black;
             // border-bottom: 1px solid black;
             font-size: 14px;
@@ -704,7 +711,7 @@
             width: 100%;
             display: grid;
             grid-template-columns: 1.3fr 1.9fr;
-            gap: 5%;
+            gap: 15%;
             // border-top: 1px solid black;
             // border-bottom: 1px solid black;
           }
@@ -718,7 +725,7 @@
             width: 100%;
             display: grid;
             grid-template-columns: 1.3fr 1.9fr;
-            gap: 5%;
+            gap: 15%;
             // border-top: 1px solid black;
             // border-bottom: 1px solid black;
           }
