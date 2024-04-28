@@ -1,7 +1,7 @@
 @import'../../../theme/variables';
 .header{
     border-bottom: 1px solid #F6F6F6;
-    padding: 22px 50px;
+    padding-block: 22px;
     box-sizing: border-box;
     position: fixed;
     top: 0px;
@@ -37,7 +37,7 @@
                         font-family: $font-en-primary;
                         font-size: 20px;
                         font-style: normal;
-                        font-weight: 300;
+                        font-weight: 500;
                         display: block;
                         transition: all 0.3s linear;
                         &.active{
@@ -171,7 +171,7 @@
 
 @media(max-width:800px){
     .header{
-        padding: 15px 15px;
+        padding-block: 15px;
         .header-main{
             .logo{
 

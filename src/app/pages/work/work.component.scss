@@ -1,127 +1,92 @@
 @import'../../../theme/variables';
+
 .section{
-    .section-main{
-        padding-left: 350px;
-    }
+    padding-top: 82px;
 }
-
-@media(max-width:1000px){
-    .section{
-        .section-main{
-            padding-left: 0px;
-            padding-top: 82px;
-        }
-    }
-}
-
 @media(max-width:800px){
     .section{
-        .section-main{
-            padding-top: 61px;
-        }
+        padding-top: 62px;
     }
 }
 
-/* --- MENU AREA --- */
+
+/* --- MENU AREA CSS --- */
 .menu-area{
-    padding: 17px 15px 17px 54px;
-    box-sizing: border-box;
-    display: none;
+    background-color: $color-white;
+    padding-block: 30px;
+    margin-bottom: 25px;
     ul{
         list-style: none;
-        padding: 0px;
-        margin: 0px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        gap: 10px;
-        li{
-            a{
-                color: $color-black;
-                font-family: $font-en-primary;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 18px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                gap: 10px;
-                cursor: pointer;
-                i{
-                    font-size: 16px;
-                }
-                &.active{
-                    font-weight: 400;
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:1000px){
-    .menu-area{
-        padding: 17px 15px 17px 15px;
-        display: block;
-    }
-}
-
-/* --- SIDE BAR CSS --- */
-.side-bar{
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 350px;
-    z-index: 200;
-    padding: 48px 15px 15px 50px;
-    height: calc(100vh - 82.1px);
-    overflow-y: auto;
-    background-color: $color-white;
-    border-right: 1px solid #f6f6f6;
-    ul{
-        list-style: none;
+        justify-content: flex-end;
         padding: 0px;
         margin: 0px;
+        gap:10px 20px;
+        flex-wrap: wrap;
         li{
             a{
-                color: $text-color;
+
+                color:rgb(0 0 0 / 50%);
                 font-family:$font-en-primary;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 500;
                 font-size: 19px;
-                line-height: 24px;
-                padding: 12px 10px;
+                line-height: 22px;
                 box-sizing: border-box;
                 transition: all 0.3s linear;
                 &.active{
                     color: $color-black;
                     font-weight: 600;
                 }
+                &:hover{
+                    color: $color-black;
+                }
             }
         }
     }
 }
-@media(max-width:1000px){
-    .side-bar{
-        height: calc(100vh - 136px);
-        left: -100%;
-        transition: all 0.3s linear;
-        &.active-slide{
-            left: 0px;
+
+@media(max-width:1020px){
+    .menu-area{
+        padding-block: 25px;
+        margin-bottom: 20px;
+        ul{
+            justify-content: center;
         }
     }
 }
 
-@media(max-width:800px){
-    .side-bar{
-        height: calc(100vh - 115px);
-        padding: 15px 15px;
+@media(max-width:600px){
+    .menu-area{
+        padding-block: 20px;
+        margin-bottom: 15px;
+        ul{
+            gap: 10px 15px;
+        }
     }
 }
 
-/* ---  WORK AREA CSS --- */
+@media(max-width:500px){
+    .menu-area{
+        padding-block: 15px;
+        margin-bottom: 10px;
+        ul{
+            gap: 5px 15px;
+            li{
+                a{
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}
 
+
+/* ---  WORK AREA CSS --- */
 .work-area{
-    padding: 142px 15px 20px 15px;
+    padding-bottom: 20px;
     .work-area-main{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -204,7 +169,7 @@
     }
 }
 
-@media(max-width:1150px){
+@media(max-width:1000px){
     .work-area{
         .work-area-main{
             grid-template-columns: repeat(2, 1fr);
@@ -214,7 +179,6 @@
 
 @media(max-width:1000px){
     .work-area{
-        padding: 20px 55px 20px 55px;
         .work-area-main{
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 15px;
@@ -222,14 +186,10 @@
     }
 }
 
-@media(max-width:800px){
-    .work-area{
-        padding: 20px 15px 20px 15px;
-    }
-}
 
 
-@media(max-width:650px){
+
+@media(max-width:550px){
     .work-area{
         .work-area-main{
             grid-template-columns: repeat(1, 1fr);
