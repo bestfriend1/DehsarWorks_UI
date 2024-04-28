@@ -1,6 +1,6 @@
 @import'../../../theme/variables';
 .section-news{
-    padding: 122px 50px 40px 50px;
+    padding: 122px 0px 40px 0px;
     .section-main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -29,8 +29,7 @@
 
 @media(max-width:800px){
     .section-news{
-        padding-inline: 15px;
-        padding-block: 90px 30px;
+        padding-block: 62px 30px;
         .section-main{
             grid-gap: 25px 20px;
         }
@@ -81,13 +80,13 @@
 
 /* ---- NTT CSS AREA --- */
 .ntt-area{
-    padding: 40px 50px 40px 50px;
+    padding: 40px 0px 40px 0px;
     text-align: right;
     p{
         color: $color-black;
         font-family: $font-en-primary;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 15px;
         line-height: normal;
         span{
@@ -100,6 +99,6 @@
 @media(max-width:800px){
     .ntt-area{
         text-align: center;
-        padding: 20px 15px;
+        padding: 20px 0px;
     }
 }

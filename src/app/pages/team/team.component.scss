@@ -1,40 +1,30 @@
 @import'../../../theme/variables';
 .section{
+    padding-top: 82px;
     .section-main{
-        padding-left: 350px;
+        display: grid;
+        grid-template-columns: 300px 1fr;
     }
 }
-
 @media(max-width:1000px){
     .section{
         .section-main{
-            padding-left: 0px;
-            padding-top: 82px;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
 
 @media(max-width:800px){
     .section{
-        .section-main{
-            padding-top: 61px;
-        }
+        padding-top: 62px;
     }
 }
 
 
 /* --- SIDE BAR CSS --- */
 .side-bar{
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 350px;
-    z-index: 200;
-    padding: 48px 15px 15px 50px;
-    height: calc(100vh - 82.1px);
-    overflow-y: auto;
+    padding: 30px 0px 15px 0px;
     background-color: $color-white;
-    border-right: 1px solid #f6f6f6;
     h3{
         font-family: $font-en-primary;
         font-style: normal;
@@ -42,6 +32,7 @@
         font-size: 32px;
         line-height: normal;
         display: block;
+ 
     }
 }
 @media(max-width:1000px){
@@ -53,15 +44,15 @@
 /* --- Team AREA CSS --- */
 
 .team-area{
-    padding: 135px 30px 30px 30px;
+    padding: 30px 20px 30px 20px;
     .team-description-area{
         margin-bottom: 65px;
         h3{
             color: $color-black;
             font-family: $font-en-primary;
             font-style: normal;
-            font-weight: 500;
-            font-size: 22px;
+            font-weight: 600;
+            font-size: 25px;
             line-height: 25px;
             display: none;
             margin-bottom: 15px!important;
@@ -141,24 +132,6 @@
     }
 }
 
-
-
-@media(max-width:1000px){
-    .team-area{
-        padding: 20px 55px 20px 55px;
-        .team-description-area{
-            margin-bottom: 30px;
-            h3{
-                display: block;
-            }
-            p{
-                font-size: 16px;
-                line-height: 20px;
-            }
-        }
-    }
-}
-
 @media(max-width:1300px){
     .team-area{
         .team-area-main{
@@ -167,11 +140,35 @@
     }
 }
 
-@media(max-width:800px){
+
+@media(max-width:1000px){
     .team-area{
-        padding: 20px 15px 20px 15px;
+        padding:20px 0px;
+        .team-description-area{
+            margin-bottom: 30px;
+            h3{
+                display: block;
+            }
+            p{
+                font-size: 17px;
+                line-height: 20px;
+                font-weight: 400;
+            }
+        }
+        .team-area-main{
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
+
+@media(max-width:900px){
+    .team-area{
+        .team-area-main{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
 
 
 @media(max-width:650px){
@@ -194,13 +191,13 @@
 
 /* ---- NTT CSS AREA --- */
 .ntt-area{
-    padding: 60px 50px 0px 50px;
+    padding-top: 60px;
     text-align: right;
     p{
         color: $color-black;
         font-family: $font-en-primary;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 15px;
         line-height: normal;
         span{
