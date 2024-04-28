@@ -36,7 +36,10 @@ const routes: Routes = [
         path: "contact-us",
         loadChildren: () => import('./pages/contact-us/contact-us.module').then(m => m.ContactUsModule)
       },
-
+      {
+        path:"temp5",
+        loadChildren: () => import('./pages/template-five/template-five.module').then(m => m.TemplateFiveModule)
+      },
       {
         path: 'idea',
         component: IdeaSpaceComponent
@@ -52,7 +55,7 @@ const routes: Routes = [
       {
         path: 'temp4',
         component : TemplateFourComponent
-      }
+      },
     ]
   },
 

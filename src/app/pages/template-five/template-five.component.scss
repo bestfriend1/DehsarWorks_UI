@@ -1,0 +1,144 @@
+@import'../../../theme/variables';
+
+.section {
+    padding-top: 82px;
+}
+@media(max-width:800px){
+    .section{
+        padding-top: 62px;
+    }
+}
+
+/* --- SECTION TOP CSS STYLE --- */
+.section-top {
+    .section-top-main {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+
+        .section-top-left {
+            padding-top: 50px;
+
+            h3 {
+                color: $color-black;
+                font-family: $font-en-primary;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 50px;
+            }
+        }
+
+        .section-top-right {
+            padding-top: 40px;
+
+            .work-info {
+                margin-bottom: 40px;
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+
+                    li {
+                        font-family: $font-en-primary;
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 30px;
+                        margin-bottom: 8px;
+                        font-style: normal;
+
+                        &:last-child {
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .section-top {
+        .section-top-main {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+
+            .section-top-left {
+                padding-top: 20px;
+            }
+
+            .section-top-right {
+                padding-top: 0px;
+                .work-info{
+                    margin-bottom: 15px;
+                    ul{
+                        li{
+                            line-height: 27px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media(max-width:600px){
+    .section-top{
+        .section-top-main{
+            grid-gap: 15px;
+            .section-top-left{
+                h3{
+                    font-size: 25px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}
+
+/* ---- SECTION IMAGES ---- */
+.section-images {
+    .section-img {
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .section-video{
+        iframe{
+            height: 300px;
+        }
+    }
+}
+
+/* ---- NTT CSS AREA --- */
+.ntt-area {
+    padding: 40px 0px 40px 0px;
+    text-align: right;
+
+    p {
+        color: $color-black;
+        font-family: $font-en-primary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: normal;
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media(max-width:800px) {
+    .ntt-area {
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
