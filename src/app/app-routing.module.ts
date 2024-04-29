@@ -63,7 +63,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'temp5',
+        path: 'work/5/:id',
         loadChildren: () =>
           import('./pages/template-five/template-five.module').then(
             (m) => m.TemplateFiveModule
