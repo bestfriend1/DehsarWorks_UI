@@ -19,7 +19,6 @@
     height: 100vh;
     overflow: hidden;
     .sideImg {
-      
       img {
         height: auto;
         width: 100%;
@@ -83,7 +82,6 @@
         }
 
         .titlebox {
-          
           margin-top: 25%;
           padding-bottom: 5%;
           font-family: grotesk;
@@ -144,49 +142,48 @@
     }
 
     .caurosela {
-
       .carousel-container {
         position: relative;
       }
-  
-      .pill{
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
+
+      .pill {
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
         border-radius: 178px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid rgba(255, 255, 255, 0.18);
         height: 5%;
         width: 15%;
-  
+
         z-index: 1;
         width: 5%;
         position: absolute;
-        
+
         top: 95%;
         left: 50%;
         transform: translate(-50%);
-  
+
         .prev {
-        // position: absolute;
-        // top: 90%;
-        
-        background: rgba(206, 55, 55, 0);
-        height: 100%;
-        width: 3%;
-        left: 0rem;
-        color: white;
-      }
-  
-      .next {
-        // position: absolute;
-        // top: 90%;
-        background: rgba(255, 255, 255, 0);
-        height: 100%;
-        width: 3%;
-        right: .5rem;
-        color: white;
-      }
+          // position: absolute;
+          // top: 90%;
+
+          background: rgba(206, 55, 55, 0);
+          height: 100%;
+          width: 3%;
+          left: 0rem;
+          color: white;
+        }
+
+        .next {
+          // position: absolute;
+          // top: 90%;
+          background: rgba(255, 255, 255, 0);
+          height: 100%;
+          width: 3%;
+          right: 0.5rem;
+          color: white;
+        }
       }
       .carousel-btn {
         position: absolute;
@@ -199,9 +196,7 @@
         padding: 10px;
         z-index: 2;
       }
-  
-      
-  
+
       .carousel {
         display: flex;
         margin: 0;
@@ -213,13 +208,13 @@
         height: 910px;
         width: 100%;
       }
-  
+
       .carousel::-webkit-scrollbar {
         display: none;
       }
-  
+
       .carousel img {
-        width: calc(100% );
+        width: calc(100%);
         height: calc(100% - 0px);
         margin: 0px;
         margin-top: 2%;
@@ -227,8 +222,6 @@
         border-radius: 0px;
         scroll-snap-align: center;
       }
-
-      
     }
 
     .sideImgTwo {
@@ -383,7 +376,6 @@
         }
       }
       .texts {
-      
         padding-left: 2%;
         .info {
           .box {
@@ -445,7 +437,6 @@
           }
 
           .titlebox {
-          
             margin-top: 5%;
             padding-bottom: 5%;
             font-family: grotesk;
@@ -486,8 +477,8 @@
               display: grid;
               grid-template-columns: 1fr 1fr;
 
-              hr{
-                  width: 202%;
+              hr {
+                width: 202%;
               }
             }
             .box7 {
@@ -510,53 +501,52 @@
       }
 
       .caurosela {
-
         .carousel-container {
           position: relative;
         }
-    
-        .pill{
+
+        .pill {
           background: rgba(105, 103, 103, 0.35);
-          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-          backdrop-filter: blur( 4px );
-          -webkit-backdrop-filter: blur( 4px );
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
           border-radius: 178px;
           border: 1px solid rgba(100, 97, 97, 0);
           height: 10%;
           width: 20%;
-    
+
           z-index: 1;
           // width: 5%;
           position: absolute;
-          
+
           top: 85%;
           left: 50%;
           transform: translate(-50%);
-    
+
           .prev {
-          // position: absolute;
-          // top: 90%;
-          
-          background: rgba(206, 55, 55, 0);
-          height: 100%;
-          width: 3%;
-          left: 0rem;
-          color: white;
-        }
-    
-        .next {
-          // position: absolute;
-          // top: 90%;
-          background: rgba(255, 255, 255, 0);
-          height: 100%;
-          width: 3%;
-          right: .5rem;
-          color: white;
-        }
+            // position: absolute;
+            // top: 90%;
+
+            background: rgba(206, 55, 55, 0);
+            height: 100%;
+            width: 3%;
+            left: 0rem;
+            color: white;
+          }
+
+          .next {
+            // position: absolute;
+            // top: 90%;
+            background: rgba(255, 255, 255, 0);
+            height: 100%;
+            width: 3%;
+            right: 0.5rem;
+            color: white;
+          }
         }
         .carousel-btn {
           position: absolute;
-          
+
           transform: translateY(-50%);
           background-color: rgba(255, 255, 255, 0.5);
           color: black;
@@ -565,12 +555,10 @@
           padding-left: 10%;
           padding-right: 10%;
           padding-top: 0;
-          
+
           z-index: 2;
         }
-    
-        
-    
+
         .carousel {
           display: flex;
           margin: 0;
@@ -582,13 +570,13 @@
           height: auto;
           width: 100%;
         }
-    
+
         .carousel::-webkit-scrollbar {
           display: none;
         }
-    
+
         .carousel img {
-          width: calc(100% );
+          width: calc(100%);
           height: calc(100% - 0px);
           margin: 0px;
           margin-top: 2%;
@@ -596,8 +584,6 @@
           border-radius: 0px;
           scroll-snap-align: center;
         }
-  
-        
       }
 
       .sideImgTwo {
@@ -679,7 +665,6 @@
           height: 32px;
           width: 88px;
           font-size: 18px;
-          
 
           margin: 0 auto;
           // padding: 8px 16px;
@@ -702,7 +687,7 @@
         }
         video::-webkit-media-controls {
           display: none;
-      }
+        }
       }
 
       .box {

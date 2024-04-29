@@ -1,251 +1,262 @@
 <div class="all">
-  <section class="one" >
-    <h1 class="wow animate__fadeInUp" data-wow-delay="0.1s">AJO IDEA SPACE</h1>
-    <div class="spans">
-      <div class="links wow animate__fadeInUp" data-wow-delay="0.3s">
-        <span>Works / Commercial / AJO IDEA SPACE </span>
-      </div>
-      <div class="locations wow animate__slideInUp" data-wow-delay="0.2s">
-        <span> Dhaka,Bangladesh </span>
-      </div>
-    </div>
-
-    <div class="img">
-      <img class="wow"
-      data-wow-delay=".2s" src="../../../assets/images/bigimg1.png" alt="">
-    </div>
-  </section>
-
-  <section class="two" >
-      <div class="rectangle">
-            <h3 class="wow animate__fadeInUp" data-wow-delay="0.2s">About</h3>
-            <div class="paragraph">
-                  <h2 class="wow animate__fadeInUp" data-wow-delay="0.1s">
-                        AJO, in Bangla is often used to describe something old, left out or irrelevant to its time. The word was used by the restaurant’s Founder and ideator Khaled Mahmud   
-                  </h2>
-
-                  <p class="wow animate__fadeInUp" data-wow-delay="0.3s">
-                        as the idea was to convert a left over space and turn it into a unique cafe near an art gallery. It was a very popular hangout space among people including artist, thinkers and designers. It acted as a platform where any one could meet and talk with artists and intellects.    
-                  </p>
-            </div>
-
-            <div class="boxes">
-                  <hr class="wow" data-wow-delay=".5s" />
-                  <div class="box1 wow animate__fadeIn" data-wow-delay=".5s ">
-                        <div class="title">
-                              Building Programme and Type:  
-                        </div>
-                        <div class="subtitle">
-                              Café and restaurant with community engagement programs  
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".6s" />
-                  <div class="box2 wow animate__fadeIn" data-wow-delay="1s">
-                        <div class="title">
-                              Project address:  
-                        </div>
-                        <div class="subtitle">
-                              (23°52'13.6"N 90°23'31.8"E) 
-                              Road 2, Sector 13, Uttara, 1230 Dhaka, Bangladesh
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".7s" />
-                  <div class="box3 wow animate__fadeIn" data-wow-delay="1.5s">
-                        <div class="title">
-                              Client:   
-                        </div>
-                        <div class="subtitle">
-                              Khaled Mahmud
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".8s" />
-                  <div class="box4 wow animate__fadeIn" data-wow-delay="1.5s">
-                        <div class="title">
-                              Design Period:  
-                        </div>
-                        <div class="subtitle">
-                              July 2015-Oct 2016
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".8s" />
-                  <div class="box5 wow animate__fadeIn" data-wow-delay="1.5s">
-                        <div class="title">
-                              Construction Period: 
-                        </div>
-                        <div class="subtitle">
-                              November 2015-January 2017 
-                        (active construction period 6 months)
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".8s" />
-                  <div class="box6 wow animate__fadeIn" data-wow-delay="1.5s">
-                        <div class="title">
-                              Status: 
-                        </div>
-                        <div class="subtitle">
-                              Operational from January 2017
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".8s" />
-            </div>
-      </div>
-
-      <div class="bigimg">
-            <img src="../../../assets/images/bigimg2.png" alt="">
-      </div>
-  </section>
-
-  <section class="three" >
-      
-      <div class="carousel-container">
-      
-            <div class="carousel">
-              <img *ngFor="let url of imageUrls" [src]="url" />
-            </div>
-            <div class="pill">
-      
-              <button class="carousel-btn prev" (click)="scroll(-1)">&#10094;</button>
-              <button class="carousel-btn next" (click)="scroll(1)">&#10095;</button>
-            </div>
-            
+      <section class="one">
+        <h1 class="wow animate__fadeInUp" data-wow-delay="0.1s">{{ selectedProject.title }}</h1>
+        <div class="spans">
+          <div class="links wow animate__fadeInUp" data-wow-delay="0.3s">
+            <span>Works / {{ selectedProject.category }} / {{ selectedProject.title }} </span>
           </div>
-
-      <div class="descriptions">
-            
-            <div class="boxes">
-                  <h3 class="links wow animate__fadeIn" data-wow-delay="0.2s">
-                        Design Teams:
-                  </h3>
-                  <hr class="wow" data-wow-delay=".2s">
-                  <div class="box1 wow animate__fadeIn" data-wow-delay=".5s">
-                        <div class="title">
-                              Principal architect:
-                        </div>
-                        <div class="subtitle">
-                              Ar.Rashed Hassan Chowdhury  
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".3s">
-                  <div class="box2 wow animate__fadeIn" data-wow-delay=".6s">
-                        <div class="title">
-                              Project Architect:  
-                        </div>
-                        <div class="subtitle">
-                              Ar.Sayedil Ashrafin, Ar.Emon Mahbub
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".4s">
-                  <div class="box3 wow animate__fadeIn" data-wow-delay=".7s">
-                        <div class="title">
-                              Landscape Architect: 
-                        </div>
-                        <div class="subtitle">
-                              In house Collaborators
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".5s">
-                  <div class="box4 wow animate__fadeIn" data-wow-delay=".8s">
-                        <div class="title">
-                              Structural designer: 
-                        </div>
-                        <div class="subtitle wow animate__fadeIn" data-wow-delay=".8s">
-                              Engr.Shamsul Alam <hr>
-                              Engr.Asaduzzaman  <hr>
-                              Engr.Mamunur Rashid <hr> 
-                              Electrical Engr. Afzal Ahmed <hr> 
-                              Mechanical Engr. Kamruzzaman 
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".6s">
-                  <div class="box5 wow animate__fadeIn" data-wow-delay=".9s">
-                        <div class="title">
-                              Construction Firm:
-                        </div>
-                        <div class="subtitle">
-                              ALM Steel Building Technology limited
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".7s">
-                  <div class="box6 wow animate__fadeIn" data-wow-delay="1s">
-                        <div class="title">
-                              Supported by: 
-                        </div>
-                        <div class="subtitle">
-                              Mir Akter Real Estate
-                        </div>
-                  </div>
-                  
+          <div class="locations wow animate__slideInUp" data-wow-delay="0.2s">
+            <span> Dhaka,Bangladesh </span>
+          </div>
+        </div>
+    
+        <div class="img">
+          <img class="wow" data-wow-delay=".2s" src="{{ selectedProject.photoLink0 }}" alt="">
+        </div>
+      </section>
+    
+      <section class="two">
+        <div class="rectangle">
+          <h3 class="wow animate__fadeInUp" data-wow-delay="0.2s">About</h3>
+          <div class="paragraph">
+            <h2 class="wow animate__fadeInUp" data-wow-delay="0.1s">
+              {{selectedProject.highlightedDescription}}
+            </h2>
+    
+            <p class="wow animate__fadeInUp" data-wow-delay="0.3s">
+              {{selectedProject.generalDescription}}
+            </p>
+          </div>
+    
+          <div class="boxes">
+            <hr class="wow" data-wow-delay=".5s" />
+            <div class="box1 wow animate__fadeIn" data-wow-delay=".5s ">
+              <div class="title">
+                Building Programme and Type: 
+              </div>
+              <div class="subtitle">
+                {{selectedProject.buildingType}}
+              </div>
             </div>
-
-
-            <div class="img">
-                  <img src="../../../assets/images/medimg1.png" alt="">
+            <hr class="wow" data-wow-delay=".6s" />
+            <div class="box2 wow animate__fadeIn" data-wow-delay="1s">
+              <div class="title">
+                Project address:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.projectAddress}}
+              </div>
             </div>
-      </div>
-          
-          
-  </section>
-
-
-  <section class="four">
-
-      <div class="video">
-            <button class="active">play</button>
-          <video id="myVideo"  autoplay>
-            <source src="../../../assets/videos/testvid1.mp4" type="video/mp4">
+            <hr class="wow" data-wow-delay=".7s" />
+            <div class="box3 wow animate__fadeIn" data-wow-delay="1.5s">
+              <div class="title">
+                Client: 
+              </div>
+              <div class="subtitle">
+                {{selectedProject.client}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".8s" />
+            <div class="box4 wow animate__fadeIn" data-wow-delay="1.5s">
+              <div class="title">
+                Design Period:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.designperiod}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".8s" />
+            <div class="box5 wow animate__fadeIn" data-wow-delay="1.5s">
+              <div class="title">
+                Construction Period: 
+              </div>
+              <div class="subtitle">
+                {{selectedProject.constructionPeriod}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".8s" />
+            <div class="box6 wow animate__fadeIn" data-wow-delay="1.5s">
+              <div class="title">
+                Status:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.status}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".8s" />
+          </div>
+        </div>
+    
+        <div class="bigimg">
+          <img src="{{ selectedProject.photoLink1 }}" alt="">
+        </div>
+      </section>
+    
+      <section class="three">
+    
+        <div class="carousel-container">
+    
+          <div class="carousel">
+            <img *ngFor="let url of imageUrls" [src]="url" />
+          </div>
+          <div class="pill">
+    
+            <button class="carousel-btn prev" (click)="scroll(-1)">&#10094;</button>
+            <button class="carousel-btn next" (click)="scroll(1)">&#10095;</button>
+          </div>
+    
+        </div>
+    
+        <div class="descriptions">
+    
+          <div class="boxes">
+            <h3 class="links wow animate__fadeIn" data-wow-delay="0.2s">
+              Design Teams:
+            </h3>
+            <hr class="wow" data-wow-delay=".2s">
+            <div class="box1 wow animate__fadeIn" data-wow-delay=".5s">
+              <div class="title">
+                Principal architect:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.principalArchitect}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".3s">
+            <div class="box2 wow animate__fadeIn" data-wow-delay=".6s">
+              <div class="title">
+                Project Architect:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.projectArchitect}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".4s">
+            <div class="box3 wow animate__fadeIn" data-wow-delay=".7s">
+              <div class="title">
+                Landscape Architect: 
+              </div>
+              <div class="subtitle">
+                {{selectedProject.landscapeArchitect}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".5s">
+            <div class="box4 wow animate__fadeIn" data-wow-delay=".8s">
+              <div class="title">
+                Structural designer: 
+              </div>
+              <div class="subtitle wow animate__fadeIn" data-wow-delay=".8s">
+                <!-- Engr.Shamsul Alam
+                <hr>
+                Engr.Asaduzzaman
+                <hr>
+                Engr.Mamunur Rashid
+                <hr>
+                Electrical Engr. Afzal Ahmed
+                <hr>
+                Mechanical Engr. Kamruzzaman -->
+                <ng-container *ngFor="let item of selectedProject.structuralDesigner.split(',')">
+                  {{ item.trim() }}
+                  <hr>
+                </ng-container>
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".6s">
+            <div class="box5 wow animate__fadeIn" data-wow-delay=".9s">
+              <div class="title">
+                Construction Firm:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.constructionFirm}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".7s">
+            <div class="box6 wow animate__fadeIn" data-wow-delay="1s">
+              <div class="title">
+                Supported by:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.supportedBy}}
+              </div>
+            </div>
+    
+          </div>
+    
+    
+          <div class="img">
+            <img src="{{ selectedProject.photoLink2 }}" alt="">
+          </div>
+        </div>
+    
+    
+      </section>
+    
+    
+      <section class="four">
+    
+        <div class="video" (click)="playPauseAction()">
+          <button class="active">
+            {{ playPauseText }}</button>
+          <video id="myVideo" loop>
+            <source src="../../../assets/videos/testvid1.mp4" />
             Your browser does not support the video tag.
-            </video>  
-      </div>
-      
-      <div class="description">
-            <div class="boxes">
-                  <hr class="wow" data-wow-delay=".5s" />
-                  <div class="box1 wow animate__fadeIn" data-wow-delay=".5s">
-                        <div class="title">
-                              Photographs: 
-                        </div>
-                        <div class="subtitle">
-                              Noufel Sharif Sojol
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".5s" />
-                  <div class="box2 wow animate__fadeIn" data-wow-delay=".6s">
-                        <div class="title">
-                              Accolades:  
-                        </div>
-                        <div class="subtitle">
-                              <span>
-                                    1. Berger Award for Excellence in Architecture, <br> 2017 Best Architects' Award <br>Category: Commercial / Mercantile / Outlet <br> Category <hr class="wow" data-wow-delay=".8s" />
-                              </span>  
-                              
-                              <span>
-                                    2. 28th JK AYA (Architect of the Year Awards) 2018 <br> Young Architect Award <br> Category: Foreign Country Architecture Award
-
-                              </span>
-                              
-                               
-                              
-                             
-
-                        </div>
-                  </div>
-                  <hr class="wow" data-wow-delay=".5s" />
-
-                  <div class="box3">
-                        <div class="title">
-                              Previous project: 
-                              
-                        </div>
-                        <div class="subtitle">
-                              Next project:
-                             
-                        </div> 
-                  </div>
-                  
-            </div>  
-
-      </div>
-  </section>
-</div>
-
-<app-category></app-category>
+          </video>
+        </div>
+    
+        <div class="description">
+          <div class="boxes">
+            <hr class="wow" data-wow-delay=".5s" />
+            <div class="box1 wow animate__fadeIn" data-wow-delay=".5s">
+              <div class="title">
+                Photographs:
+              </div>
+              <div class="subtitle">
+                {{selectedProject.photographs}}
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".5s" />
+            <div class="box2 wow animate__fadeIn" data-wow-delay=".6s">
+              <div class="title">
+                Accolades:
+              </div>
+              <div class="subtitle">
+                <!-- <span>
+                  1. Berger Award for Excellence in Architecture, <br> 2017 Best Architects' Award <br>Category: Commercial
+                  / Mercantile / Outlet <br> Category
+                  <hr class="wow" data-wow-delay=".8s" />
+                </span>
+    
+                <span>
+                  2. 28th JK AYA (Architect of the Year Awards) 2018 <br> Young Architect Award <br> Category: Foreign
+                  Country Architecture Award
+    
+                </span> -->
+    
+                <ng-container *ngFor="let item of selectedProject.accolades;let i=index">
+                  <span [innerHTML]="item">
+                  </span>
+                  <hr class="wow" data-wow-delay=".8s" *ngIf="i!=selectedProject.accolades.length-1" />
+                </ng-container>
+    
+    
+    
+              </div>
+            </div>
+            <hr class="wow" data-wow-delay=".5s" />
+    
+            <div class="box3">
+              <a [href]="'/work/'+previousProject.template+'/'+previd">
+                <div class="title">Previous project</div>
+              </a>
+              <a [href]="'/work/'+nextProject.template+'/'+nextid">
+                <div class="subtitle">Next project</div>
+              </a>
+            </div>
+    
+          </div>
+    
+        </div>
+      </section>
+    </div>
+    
+    <app-category></app-category>

@@ -70,19 +70,19 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'idea',
+        path: 'work/1/:id',
         component: IdeaSpaceComponent,
       },
       {
-        path: 'temp2',
+        path: 'work/2/:id',
         component: TemplateTwoComponent,
       },
       {
-        path: 'temp3',
+        path: 'work/3/:id',
         component: TemplateThreeComponent,
       },
       {
-        path: 'temp4',
+        path: 'work/4/:id',
         component: TemplateFourComponent,
       },
       { path: '**', redirectTo: '' },
