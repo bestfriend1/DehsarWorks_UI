@@ -1,5 +1,5 @@
-export const staticAssetURL: string = "http://localhost:4006";
-//export const staticAssetURL: string = "https://api.dehsarworks.com";
+//export const staticAssetURL: string = "http://localhost:4006";
+export const staticAssetURL: string = "https://api.dehsarworks.com";
 export const serverURL: string = `${staticAssetURL}/api/v1/`;
 
 export interface Project {
