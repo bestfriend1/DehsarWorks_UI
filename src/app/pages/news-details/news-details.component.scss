@@ -1,8 +1,55 @@
 @import'../../../theme/variables';
+.section{
+    padding-top: 82px;
+    .section-main{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+    }
 
+    .section-video{
+        margin-top: 20px;
+    }
+}
+@media(max-width:1000px){
+    .section{
+        .section-main{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media(max-width:800px){
+    .section{
+        padding-top: 62px;
+        .section-main{
+            padding-left: 0px;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .section-video{
+        iframe{
+            height: 300px;
+        }
+    }
+}
+
+/* --- SIDE BAR CSS --- */
+.side-bar{
+    padding: 40px 15px 15px 15px;
+    background-color: $color-white;
+}
+@media(max-width:1100px){
+    .side-bar{
+        padding: 20px 15px 0px 0px;
+    }
+}
+
+/* ---  NEWS AREA CSS --- */
 
 .news-area{
-    padding: 125px 0px 20px 0px;
+    padding: 40px 20px 20px 30px;
     .news-description-area{
         margin-bottom: 45px;
         p{
@@ -28,16 +75,20 @@
 
 
 
+@media(max-width:1100px){
+    .news-area{
+        padding-inline: 15px;
+    }
+}
 
 @media(max-width:1000px){
     .news-area{
-        padding: 102px 0px 20px 0px;
+        padding: 20px 0px 20px 0px;
     }
 }
 
 @media(max-width:800px){
     .news-area{
-        padding: 81px 0px 20px 0px;
         .news-description-area{
             margin-bottom: 20px;
         }
@@ -48,12 +99,17 @@
 }
 
 
+
 /* ---- NEWS CARD CSS --- */
 .news-card{
     cursor: pointer;
     &.responsive-card{
-        display: block;
+        display: none;
         margin-bottom: 25px!important;
+    }
+    .news-img{
+        width: 100%;
+        margin-bottom: 17px;
     }
     .news-card-body{
         h3{
@@ -113,3 +169,4 @@
         padding: 30px 0px 0px 0px;
     }
 }
+
