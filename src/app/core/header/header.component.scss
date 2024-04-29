@@ -1,6 +1,5 @@
 @import'../../../theme/variables';
 .header{
-    border-bottom: 1px solid #F6F6F6;
     padding-block: 22px;
     box-sizing: border-box;
     position: fixed;
@@ -8,7 +7,7 @@
     left: 0px;
     z-index: 200;
     width: 100%;
-    background-color: $color-white;
+    background-color: transparent;
     .header-main{
         display:flex;
         align-items: center;
@@ -188,4 +187,9 @@
             }
         }
     }
+}
+
+.bgwhite{
+    background-color: $color-white;
+    border-bottom: 1px solid #F6F6F6;
 }

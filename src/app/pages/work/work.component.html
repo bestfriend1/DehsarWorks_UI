@@ -4,22 +4,22 @@
         
             <div class="menu-area">
                 <ul>
-                    <li><a href="#" class="active">All</a></li>
-                    <li><a href="#">Residential</a></li>
-                    <li><a href="#">Commercial</a></li>
-                    <li><a href="#">Institution</a></li>
-                    <li><a href="#">Interior</a></li>
-                    <li><a href="#">Religious</a></li>
-                    <li><a href="#">Industrial</a></li>
-                    <li><a href="#">Urban Planning</a></li>
-                    <li><a href="#">Mixed Use</a></li>
-                    <li><a href="#">Product Design</a></li>
+                    <li><a [ngClass]="{'active':selectedCategory == 'All'}" routerLink="/work">All</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Residential">Residential</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Commercial">Commercial</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Institution">Institution</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Interior">Interior</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Religious">Religious</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Industrial">Industrial</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Urban Planning">Urban Planning</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Mixed Use">Mixed Use</a></li>
+                    <li><a routerLinkActive="active" routerLink="/work/Product Design">Product Design</a></li>
                 </ul>
             </div><!---END MENU AREA-->
     
             <div class="work-area">
                 <div class="work-area-main">
-                    <div class="work-card">
+                    <!-- <div class="work-card">
                         <div class="work-img">
                             <img src="./assets/images/temp/png/product.png" alt="">
                         </div>
@@ -29,85 +29,23 @@
                                 <h3>AJO Idea Space</h3>
                             </div>
                         </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img">
-                            <img src="./assets/images/temp/png/product1.png" alt="">
-                        </div>
-                        <div class="work-hover">
-                            <img src="./assets/images/temp/png/product1.jpg" alt="">
+                    </div> -->
+
+                    <ng-container *ngFor="let item of projects;let i=index">
+                        <div class="work-card" [routerLink]="[item.template,i]"
+                          *ngIf="item.category == selectedCategory || selectedCategory == 'All'">
+                          <div class="work-img">
+                            <img src="{{ item.displayImg }}" alt="">
+                          </div>
+                          <div class="work-hover">
+                            <img src="{{ item.hoverImg }}" alt="">
                             <div class="work-info">
-                                <h3>Grameen Telecom Trust Bhaban</h3>
+                              <h3>{{ item.title }}</h3>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img">
-                            <img src="./assets/images/temp/png/product2.png" alt="">
-                        </div>
-                        <div class="work-hover">
-                            <img src="./assets/images/temp/png/product2.jpg" alt="">
-                            <div class="work-info">
-                                <h3>Grameen Telecom Trust Bhaban</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img">
-                            <img src="./assets/images/temp/png/product3.png" alt="">
-                        </div>
-                        <div class="work-hover">
-                            <img src="./assets/images/temp/png/product3.jpg" alt="">
-                            <div class="work-info">
-                                <h3>Grameen Telecom Trust Bhaban</h3>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="work-card">
-                        <div class="work-img">
-                            <img src="./assets/images/temp/png/product4.png" alt="">
-                        </div>
-                        <div class="work-hover">
-                            <img src="./assets/images/temp/png/product4.jpg" alt="">
-                            <div class="work-info">
-                                <h3>AJO Idea Space</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img">
-                            <img src="./assets/images/temp/png/product5.png" alt="">
-                        </div>
-                        <div class="work-hover">
-                            <img src="./assets/images/temp/png/product5.jpg" alt="">
-                            <div class="work-info">
-                                <h3>Grameen Telecom Trust Bhaban</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img">
-                            <img src="./assets/images/temp/png/product6.png" alt="">
-                        </div>
-                        <div class="work-hover">
-                            <img src="./assets/images/temp/png/product6.jpg" alt="">
-                            <div class="work-info">
-                                <h3>Grameen Telecom Trust Bhaban</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img">
-                            <img src="./assets/images/temp/png/product7.png" alt="">
-                        </div>
-                        <div class="work-hover">
-                            <img src="./assets/images/temp/png/product7.jpg" alt="">
-                            <div class="work-info">
-                                <h3>Grameen Telecom Trust Bhaban</h3>
-                            </div>
-                        </div>
-                    </div>
+                      </ng-container>
+ 
                 </div>
             </div><!--END WORK AREA-->
         </div>

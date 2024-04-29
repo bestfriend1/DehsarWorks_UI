@@ -16,6 +16,10 @@ import { HeaderModule } from './core/header/header.module';
 import { TemplateFourComponent } from './pages/template-four/template-four.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { HttpClientModule } from '@angular/common/http';
+import { TeamService } from './services/team.service';
+import { StoryService } from './services/story.service';
+import { MainService } from './services/main.service';
 
 
 
@@ -41,10 +45,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     CommonModule,
     HeaderModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
     
   ],
-  providers: [],
+  providers: [MainService,StoryService, TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,14 +2,14 @@
 
     <div class="container">
         <div class="section-main">
-            <div class="news-card" *ngFor="let data of [1,2,3,4,5,6,7,8]">
+            <div class="news-card" *ngFor="let data of news;let i =index" [routerLink]="['/','news',i]">
                 <div class="news-img">
-                    <img src="./assets/images/temp/png/news-1.png" alt="">
+                    <img src="{{data.image0}}" alt="">
                 </div>
                 <div class="news-card-body">
-                    <h3>Projects Published in “Architecture in transition: emergent practices in South Asia”; a book ini ...
+                    <h3>{{data.title}}
                     </h3>
-                    <p>FEB 13, 2024</p>
+                    <p>{{data.date}}</p>
                 </div>
             </div>
         </div>
