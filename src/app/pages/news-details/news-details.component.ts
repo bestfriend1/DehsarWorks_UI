@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Story } from 'src/app/interfaces';
 import { StoryService } from 'src/app/services/story.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-news-details',
@@ -10,10 +11,12 @@ import { StoryService } from 'src/app/services/story.service';
 })
 export class NewsDetailsComponent {
   selectedNews: Story;
+  youtubeEmbedLink:SafeResourceUrl;
 
   constructor(
     private storyService: StoryService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -22,6 +25,7 @@ export class NewsDetailsComponent {
     this.storyService.getStoriesFromServer().subscribe((stories) => {
       this.storyService.stories = stories;
       this.selectedNews = stories[id];
+      this.youtubeEmbedLink = this.sanitizer.bypassSecurityTrustResourceUrl(this.selectedNews.youtubeLink);
     });
   }
 }

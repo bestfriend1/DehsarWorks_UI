@@ -3,27 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@200..800&display=swap');
 @font-face{
     font-family: 'primary-font';
-    src: url('./../assets/fonts/OverusedGrotesk-ExtraBold-BF64eeac17d4c2c.ttf');
+    //src: url('./../assets/fonts/OverusedGrotesk-ExtraBold-BF64eeac17d4c2c.ttf');
+    src: url('./../assets/fonts/Replica-Bold.ttf');
     font-weight: bold;
 }
 @font-face{
     font-family: 'primary-font';
-    src: url('./../assets/fonts/OverusedGrotesk-Bold-BF64eeac17f1b7f.ttf');
+    src: url('./../assets/fonts/Replica-Bold.ttf');
     font-weight: 700;
 }
 @font-face{
     font-family: 'primary-font';
-    src: url('./../assets/fonts/OverusedGrotesk-SemiBold-BF64eeac17f0443.ttf');
+    //src: url('./../assets/fonts/OverusedGrotesk-SemiBold-BF64eeac17f0443.ttf');
+    src: url('./../assets/fonts/Replica-Regular.ttf');
     font-weight: 600;
 }
 @font-face{
     font-family: 'primary-font';
-    src: url('./../assets/fonts/OverusedGrotesk-Medium-BF64eeac18163be.ttf');
+    //src: url('./../assets/fonts/OverusedGrotesk-Medium-BF64eeac18163be.ttf');
+    src: url('./../assets/fonts/Replica-Regular.ttf');
     font-weight: 500;
 }
 
 @font-face{
     font-family: 'primary-font';
-    src: url('./../assets/fonts/OverusedGrotesk-Light-BF64eeac18175cf.ttf');
+    //src: url('./../assets/fonts/OverusedGrotesk-Light-BF64eeac18175cf.ttf');
+    src: url('./../assets/fonts/Replica-Light.ttf');
     font-weight: 400;
 }

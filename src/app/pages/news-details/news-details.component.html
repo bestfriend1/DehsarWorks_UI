@@ -32,7 +32,7 @@
         </div>
 
         <div class="section-video" *ngIf="selectedNews.youtubeLink">
-          <iframe width="100%" height="360" src="{{ selectedNews.youtubeLink }}" title="Idea space" frameborder="0"
+          <iframe width="100%" height="360" [src]="youtubeEmbedLink" title="Idea space" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div><!--- END SECTION VIDEO AREA -->

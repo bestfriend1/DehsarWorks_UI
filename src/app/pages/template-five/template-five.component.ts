@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Project } from 'src/app/interfaces';
 import { MainService } from 'src/app/services/main.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-template-five',
@@ -21,11 +23,13 @@ export class TemplateFiveComponent {
   nextProject: Project;
   previd: number = 0;
   nextid: number = 0;
+  youtubeEmbedLink:SafeResourceUrl;
 
   constructor(
     private projectService: MainService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -33,6 +37,7 @@ export class TemplateFiveComponent {
     this.projectService.getProjectsFromServer().subscribe((projects) => {
       this.projectService.projects = projects;
       this.selectedProject = this.projectService.projects[id];
+      this.youtubeEmbedLink = this.sanitizer.bypassSecurityTrustResourceUrl(this.selectedProject.videolink);
       this.previd = Number(id) - 1;
       this.nextid = Number(id) + 1;
       if (this.previd < 0)
